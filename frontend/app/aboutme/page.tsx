@@ -17,7 +17,7 @@ export default function AboutMePage() {
 
       {/* About Me */}
       <p className={styles.quote} style={{ marginTop: "300px" }}>
-        Ich strebe danach, Technik so einzusetzen, dass sie echte Probleme löst und Menschen unterstützt.
+        Ich strebe danach, durch mein kombiniertes Wissen aus Technik und Gestaltung, echte Probleme zu lösen, die Menschen unterstützen und nicht behindern.
       </p>
 
       <div className={styles.imageTextContainer}>

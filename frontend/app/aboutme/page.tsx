@@ -17,7 +17,7 @@ export default function AboutMePage() {
 
       {/* About Me */}
       <p className={styles.quote} style={{ marginTop: "300px" }}>
-        Ich strebe danach, durch mein kombiniertes Wissen aus Technik und Gestaltung, echte Probleme zu lösen, die Menschen unterstützen und nicht behindern.
+        Mein Ziel ist es, durch die Verbindung von Technik und Gestaltung Lösungen zu entwickeln, die Menschen helfen, statt sie zu behindern.
       </p>
 
       <div className={styles.imageTextContainer}>
@@ -31,9 +31,9 @@ export default function AboutMePage() {
             Über Mich
           </h1>
           <p className={styles.mediumText}>
-            Ich bin Designerin mit einem starken Fokus auf kreative, funktionale und nutzerzentrierte Gestaltung. 
-            Meine Arbeitsweise ist strukturiert, detailorientiert und lösungsorientiert, sodass ich Konzepte von der 
-            Idee bis zur finalen Umsetzung präzise umsetze. Ich kombiniere ästhetisches Gespür mit einem tiefen 
+            Ich bin Designerin mit einem starken Fokus auf barrierefreie, funktionale und nutzerzentrierte Gestaltung. 
+            Meine Arbeitsweise ist strukturiert, detailorientiert und problemorientiert, sodass ich existierende Probleme finde 
+            und Lösungen schrittweise entwickel. Ich kombiniere ästhetisches Gespür mit einem tiefen 
             Verständnis für Usability und Barrierefreiheit, um Interfaces, Produkte und visuelle Kommunikation zu entwickeln, 
             die Menschen begeistern und ihnen den Umgang erleichtern. Innovation, Kreativität und Teamfähigkeit treiben 
             meine Arbeit an, und ich lege großen Wert darauf, Designlösungen zu schaffen, die sowohl schön als auch funktional sind.

@@ -12,8 +12,12 @@ export default function ProjectCard({ title, imageUrl }: ProjectCardProps) {
   return (
     <div className={styles.projectCard}>
       <Link href={`/${title}`}>
-        <img src={imageUrl} alt={title} className={styles.projectCardImage} />
-        <h3 className={styles.bigText}>{title}</h3>
+        <div className={styles.imgWrapper}>
+          <img 
+            src={imageUrl} 
+            alt={title} 
+            className={styles.projectCardImage} />
+        </div>
       </Link>
     </div>
   );

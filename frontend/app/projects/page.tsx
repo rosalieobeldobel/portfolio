@@ -25,7 +25,6 @@ export default function ProjectsPage() {
 
       {/* Project Grid */}
       <main className={styles.mainContent}>
-        <h1 className={styles.normalHeader}>Projekte</h1>
         <div className={styles.projectGrid}>
           {projects.map((p) => (
             <ProjectCard key={p.title} title={p.title} imageUrl={p.imageUrl} />

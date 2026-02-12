@@ -55,10 +55,12 @@ export default function HomePage() {
           <h1 className={styles.monoHeader}>Informatikerin</h1>
           <p className={styles.mediumText}>Hallo, ich bin eine Studentin im 5. Semester 
             des Studienganges Informatik und Design an der Hochschule für angewandte Wissenschaften - München. <br /><br />
-            Dieser Studiengang wurde in das Leben gerufen, weil oft ein Kommunikations- bzw. Verständnisproblem 
-            zwischen Designer*innen und Informatiker*innen  exisitiert. Indem ich zum Einen lerne wie man 
-            digitale Plattformen gestaltet und zum Anderen lerne wie man diese programmiert entwickele ich ein Verständnis 
-            sowohl für den Designbereich als auch wie für den Informatikbereich. 
+            Der Studiengang entstand aus dem häufigen Kommunikations- und Verständnisproblem zwischen Designer*innen 
+            und Informatiker*innen. Durch meine Fähigkeiten in beiden Disziplinen fungiere ich als Schnittstelle die 
+            nutzerzentrierte Gestaltung mit technischer Umsetzung. Projekte erhalten mit 
+            meiner Hilfe ein Auge für technische Umsetzungsmöglichkeiten, sowie gestalterische 
+            Potentiale. Entscheidungen im Prozess treffe ich problemorientiert und unabhängig von 
+            persönlichen Präferenzen.
           </p>
         </div>
       </div>

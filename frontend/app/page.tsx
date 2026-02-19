@@ -25,7 +25,7 @@ export default function HomePage() {
         }}
       >
         <img
-          src="/images/pfp.jpg"
+          src="/graphics/pfp.jpeg"
           alt="PFP"
           style={{
             width: "100%",

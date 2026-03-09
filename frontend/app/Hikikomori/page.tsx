@@ -94,7 +94,7 @@ export default function ProjectDetailPage() {
         {/* Result */}
         <VideoOnScroll src="/videos/hikikomori_website.mp4" />
 
-        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "150px" }}>
+        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "50px" }}>
             <figure className={styles.figure}>
               <a
                 href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"

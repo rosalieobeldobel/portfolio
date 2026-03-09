@@ -39,8 +39,8 @@ export default function HomePage() {
         <div
           style={{
             position: "absolute",
-            top: "75px",          
-            left: "81.5%",         
+            top: "65px",          
+            left: "75%",         
             width: "75%",
             height: "100%",
             zIndex: 2,
@@ -53,13 +53,11 @@ export default function HomePage() {
           <h1 className={styles.designHeader}>Designerin</h1>
           <h1 className={styles.normalHeader}>+</h1>
           <h1 className={styles.monoHeader}>Informatikerin</h1>
-          <p className={styles.mediumText}>Hallo, ich bin eine Studentin im 5. Semester 
+          <p className={styles.mediumText}>Hallo, ich bin eine Studentin im 6. Semester 
             des Studienganges Informatik und Design an der Hochschule für angewandte Wissenschaften - München. <br /><br />
             Der Studiengang entstand aus dem häufigen Kommunikations- und Verständnisproblem zwischen Designer*innen 
             und Informatiker*innen. Durch meine Fähigkeiten in beiden Disziplinen fungiere ich als Schnittstelle die 
-            nutzerzentrierte Gestaltung mit technischer Umsetzung. Projekte erhalten mit 
-            meiner Hilfe ein Auge für technische Umsetzungsmöglichkeiten, sowie gestalterische 
-            Potentiale. Entscheidungen im Prozess treffe ich problemorientiert und unabhängig von 
+            nutzerzentrierte Gestaltung mit technischer Umsetzung verbindet. Entscheidungen im Prozess treffe ich problemorientiert und unabhängig von 
             persönlichen Präferenzen.
           </p>
         </div>

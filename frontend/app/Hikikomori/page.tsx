@@ -25,6 +25,11 @@ export default function ProjectDetailPage() {
           }}
         />
 
+        <p className={styles.quote} style={{ marginTop: "150px"}}>
+            Das Konzept des Projektes ist eine interaktive, spielbare Webseite, die auf kreative Art und Weise über das Phänomen Hikikomori informiert.  
+            Das Ziel war ein digitales Erlebnis zu erschaffen, das sowohl emotional berührt als auch faktenbasiert aufklärt.
+        </p>
+
         {/* Discover */}
         <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
         <img
@@ -83,12 +88,19 @@ export default function ProjectDetailPage() {
             Kurses umgesetzt werden und bot eine große Menge an Daten für die Visualisierung. 
         </p>
 
-        {/* Concept */}
-        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Concept</h2>
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-            Das Konzept war eine interaktive, spielbare Webseite, die auf kreative Weise über das Phänomen Hikikomori informiert.  Das Ziel war ein digitales Erlebnis zu schaffen, das sowohl emotional berührt als auch faktenbasiert aufklärt.
-        </p>
-        <div className={styles.imageTextContainer} style={{ marginBottom: "150px" }}>
+        {/* Result */}
+        <img
+          src="images/hikikomori/zimmerbild_fertig.jpg"
+          alt="Hikikomori Develop"
+          style={{
+            width: "100%",
+            height: "100%",
+            marginTop: "150px",
+            display: "block",
+            objectPosition: "center"
+          }}
+        />
+        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "50px" }}>
             <figure className={styles.figure}>
               <a
                 href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"

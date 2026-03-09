@@ -92,6 +92,7 @@ export default function ProjectDetailPage() {
         </p>
 
         {/* Result */}
+        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Deliver</h2>
         <VideoOnScroll src="/videos/hikikomori_website.mp4" />
 
         <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "50px" }}>
@@ -119,7 +120,7 @@ export default function ProjectDetailPage() {
             <p className={styles.mediumText}>
               Die Entscheidung fiel auf ein Point-and-Click Adventure Spiel, da dieses Genre am Besten das Konzept kommunizieren kann.
               <br /><br />
-              Hikikomori ist ein japanischer Begriff für Menschen, die sich über einen langen Zeitraum aus der Gesellschaft zurückziehen. Sie verlassen kaum noch ihr Zimmer und meiden soziale Kontakte. Daher entschieden wir uns für den Spielcharakter 
+              Hikikomori ist ein japanischer Begriff für Menschen, die sich über einen langen Zeitraum aus der Gesellschaft zurückziehen. Sie verlassen kaum noch ihr Zimmer und meiden soziale Kontakte. Daher entschied man sich für den Spielcharakter 
               Kenshin Ozawa, 37 Jahre alt. Sein bereits verstorbener Vater war gewälttätig ihm gegenüber. Deswegen lebt er nur noch mit seiner Mutter zusammen, welche jdeoch krank ist. Zu seinem jüngeren Bruder hat er keinen Kotakt mehr, da dieser Kenshin hasst.
               Kenshin selbst leidet an Depressionen, eine Angststörungen, ADHS und PTBS. Alle psychologischen Erkrankungen wurden ausgiebig recherchiert, um diese nicht fehlerhaft darzustellen. Durch die Website soll man in die Emotionen und das Leben von 
               Kenshin eintauchen und wird dabei passiv über die bekannten Daten von Hikikomori aufgeklärt. 

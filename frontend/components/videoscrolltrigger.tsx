@@ -40,7 +40,7 @@ export default function VideoOnScroll({ src }: VideoOnScrollProps) {
       playsInline
       style={{
         width: "100%",
-        marginTop: "150px",
+        marginTop: "50px",
         display: "block",
       }}
     />

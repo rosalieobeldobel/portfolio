@@ -1,6 +1,9 @@
 import styles from '@/app/page.module.css';
 import MenuLeft from "@/components/menuleft";
 import MenuRight from "@/components/menuright";
+import VideoOnScroll from "@/components/videoscrolltrigger";
+
+
 
 export default function ProjectDetailPage() {
   return (
@@ -89,18 +92,9 @@ export default function ProjectDetailPage() {
         </p>
 
         {/* Result */}
-        <img
-          src="images/hikikomori/zimmerbild_fertig.jpg"
-          alt="Hikikomori Develop"
-          style={{
-            width: "100%",
-            height: "100%",
-            marginTop: "150px",
-            display: "block",
-            objectPosition: "center"
-          }}
-        />
-        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "50px" }}>
+        <VideoOnScroll src="/videos/hikikomori_website.mp4" />
+
+        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "150px" }}>
             <figure className={styles.figure}>
               <a
                 href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"

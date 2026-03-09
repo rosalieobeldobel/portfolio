@@ -51,7 +51,7 @@ export default function ProjectDetailPage() {
             Das Projekt hatte eine Zeitspanne von 6 Wochen und wurde in Gruppen von 2-3 Personen durchgeführt. Die Gruppe Hikikomori bestand aus den Mitgliedern Polina Sippl, Gloria Bichler und Rosalie Obeldobel. 
             Thematik der ersten Phase war "Discover". In dieser Phase sollte man sich einen allgemeinen Überblick über mögliche Themen verschaffen. Die möglichen Themen wurden durch Brainstorming zusammengetragen, 
             technische Möglichkeiten der Visualisierung von Daten wurden recherchiert, sowie existierende Datensätze vermerkt. 
-          </p>
+        </p>
 
         {/* Define */}
         <div className={styles.imageTextContainer}>
@@ -64,7 +64,7 @@ export default function ProjectDetailPage() {
             <h1 className={styles.normalHeader}>
               Define
             </h1>
-            <p className={styles.mediumText}>
+            <p className={styles.mediumText} style={{ marginTop: "50px"}}>
               Aus allen Themenfeldern, die beim brainstorming zusammengetragen wurden, wurde die Auswahl zuerst auf drei Themen reduziert. Diese Themen waren "Mental Health & Death", "Mental Health & Economy" und 
               "Mental Health & Social Media". Die Entscheidung viel auf das Thema "Mental Health & Social Media", da es heutzutage viele Menschen betrifft. Durch das Projekt konnte auf dieses Problem aufmerksam gemacht werden. 
             </p>
@@ -106,6 +106,9 @@ export default function ProjectDetailPage() {
                   src="images/hikikomori/qr-code_githubrepo.png"
                   alt="QR-Code zum GitHub Repository"
                   className={styles.image}
+                  style={{
+                    width: "300px"
+                  }}
                 />
               </a>
           

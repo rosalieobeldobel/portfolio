@@ -18,7 +18,7 @@ export default function ProjectDetailPage() {
       <main className={styles.mainContent}> 
         <h1 className={styles.normalHeader}>MOIA - Museum Of Interactive Art</h1>
         <img
-          src="images/moia-start.jpeg"
+          src="images/moia/moia-start.jpeg"
           alt="MOIA Start"
           style={{
             width: "1200px",
@@ -39,7 +39,7 @@ export default function ProjectDetailPage() {
         {/* Discover*/}
         <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
         <img
-          src="images/moia-research.jpeg"
+          src="images/moia/moia_discover.jpeg"
           alt="Recherche"
           className={styles.image}
           style={{
@@ -61,7 +61,7 @@ export default function ProjectDetailPage() {
         {/* Define*/}
         <div className={styles.imageTextContainer}>
           <img
-            src="images/moia-planning.jpeg"
+            src="images/moia/moia_define.jpeg"
             alt="Recherche"
             className={styles.image}
           />
@@ -83,9 +83,16 @@ export default function ProjectDetailPage() {
         <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Develop</h2>
         
         <img
-          src="images/moia-building.jpeg"
+          src="images/moia/moia_develop.png"
           alt="Building"
           className={styles.image}
+          style={{
+            width: "100%",
+            height: "100%",
+            marginTop: "50px",
+            display: "block",
+            objectPosition: "center"
+          }}
         />
         
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>

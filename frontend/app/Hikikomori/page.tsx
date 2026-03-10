@@ -96,27 +96,15 @@ export default function ProjectDetailPage() {
         <VideoOnScroll src="/videos/hikikomori_website.mp4" />
 
         <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "50px" }}>
-            <figure className={styles.figure}>
-              <a
-                href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="images/hikikomori/qr-code_githubrepo.png"
-                  alt="QR-Code zum GitHub Repository"
-                  className={styles.image}
-                  style={{
-                    width: "300px"
-                  }}
-                />
-              </a>
-          
-              <figcaption className={styles.caption}>
-                Zum GitHub Repository
-              </figcaption>
-              </figure>
-            <div className={styles.textContent}>
+          <img
+            src="images/hikikomori/familienfoto.png"
+            alt="Famillienfoto"
+            className={styles.image}
+            style={{
+              width: "300px"
+            }}
+          />
+          <div className={styles.textContent}>
             <h1 className={styles.smallHeader}>
               Hikikomori - Die Idee hinter dem Spiel
             </h1>
@@ -130,6 +118,31 @@ export default function ProjectDetailPage() {
             </p>
           </div>
         </div>
+
+        <p className={styles.normalHeader} style={{ marginTop: "150px"}}>
+          Neugierig geworden?<br />
+          hier geht es zum
+        </p>
+        <p className={styles.monoHeader}>
+          GitHub Repository:
+        </p>
+        <a
+          href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"
+          aria-label="Hanga´man github repo" 
+          className={styles.socialLink}
+        > 
+          <img 
+            src="/icons/hikikomori.png"
+            alt="QR-Code"
+              style={{
+                width: "50%",
+                height: "50%",
+                marginLeft: "500px",
+                marginTop: "100px",
+                marginBottom: "300px",
+              }}
+          />
+        </a>
 
       </main>
     </div>

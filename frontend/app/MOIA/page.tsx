@@ -131,8 +131,11 @@ export default function ProjectDetailPage() {
 
       <p className={styles.normalHeader} style={{ marginTop: "150px"}}>
         Neugierig geworden?<br />
-        Hier geht es zur <br /> Website:
+        Hier geht es zur 
       </p>
+      <p className={styles.monoHeader}>
+          Website:
+        </p>
       <a
         href="https://web.moia.workers.dev/"
         aria-label="Moia Logo" 

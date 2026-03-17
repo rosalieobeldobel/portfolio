@@ -20,12 +20,7 @@ export default function AboutMePage() {
         Mein Ziel ist es, durch die Verbindung von Technik und Gestaltung Lösungen zu entwickeln, die Menschen helfen, statt sie zu behindern.
       </p>
 
-      <div className={styles.imageTextContainer}>
-        <img
-          src="images/pfp.jpg"
-          alt="Über Mich Design"
-          className={styles.image}
-        />
+      <div className={styles.imageTextContainer} style={{ marginTop: "400px", width: "300px", marginLeft: "500px" }}>
         <div className={styles.textContent}>
           <h1 className={styles.designHeader}>
             Über Mich
@@ -41,14 +36,14 @@ export default function AboutMePage() {
         </div>
       </div>
 
-      <div className={styles.imageTextContainer}>
+      <div className={styles.imageTextContainer} style={{ marginTop: "400px", width: "300px", margin: "100px" }}>
         <div className={styles.textContent}>
           <h1 className={styles.monoHeader}>
             Über Mich
           </h1>
           <p className={styles.mediumText}>
-            Ich bin Informatikerin mit einem starken Fokus auf strukturierte Problemlösungen, effiziente Codeentwicklung 
-            und benutzerfreundliches Design. Meine Arbeitsweise ist organisiert, lösungsorientiert und detailverliebt, 
+            Ich bin Informatikerin mit einem starken Fokus auf strukturierten Problemlösungen, effizienter Codeentwicklung 
+            und benutzerfreundlichem Design. Meine Arbeitsweise ist organisiert, lösungsorientiert und detailverliebt, 
             sodass ich Projekte zuverlässig von der Konzeption bis zur Umsetzung begleite. Ich kombiniere technisches Know-how 
             in Programmiersprachen, Datenbanken und Webtechnologien mit einem verständnisvollen Blick für Nutzerbedürfnisse und 
             zugängliches, inklusives Design. Es motiviert mich, digitale Lösungen zu schaffen, die Menschen helfen, 
@@ -56,11 +51,7 @@ export default function AboutMePage() {
             erfolgreicher Projekte, und ich strebe stets danach, innovative und nachhaltige Ergebnisse zu liefern.
           </p>
         </div>
-        <img
-          src="images/pfp.jpg"
-          alt="Über Mich Informatik"
-          className={styles.image}
-        />
+        
       </div>
 
       {/* Skills */}

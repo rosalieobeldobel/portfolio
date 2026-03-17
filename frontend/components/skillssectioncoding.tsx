@@ -14,8 +14,6 @@ export default function SkillsSectionCoding() {
 
   return (
     <section className={styles.skillsSection}>
-      <h2 className={styles.title}>Skills</h2>
-
       <div className={styles.skillsList}>
         {skills.map((skill) => (
           <SkillItem

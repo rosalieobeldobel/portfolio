@@ -25,7 +25,11 @@ export default function ImageSlider({ images }: { images: string[] }) {
           alt={`Slide ${current}`}
           width={900}
           height={600}
-          className={styles.sliderImage}
+          style={{
+            objectFit: "contain", 
+            objectPosition: "center",
+            borderRadius: 0, 
+          }}
         />
       </div>
 

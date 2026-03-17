@@ -128,7 +128,7 @@ export default function ProjectDetailPage() {
         </p>
         <a
           href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"
-          aria-label="Hanga´man github repo" 
+          aria-label="Hangsman github repo" 
           className={styles.socialLink}
         > 
           <img 

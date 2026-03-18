@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     { title: "MOIA", imageUrl: "/graphics/column_moia.png" },
     { title: "Hikikomori" , imageUrl: "/graphics/column_hikikomori.png" },
     { title: "HANGMAN", imageUrl: "/graphics/column_hangman.png" },
-    { title: "R.E.S.", imageUrl: "/graphics/column_res.png" },
+    { title: "RES", imageUrl: "/graphics/column_res.png" },
     { title: "MingaTrends", imageUrl: "/graphics/column_mingatrends.png" },
     { title: "Renshuu", imageUrl: "/graphics/column_renshuu.png" },
   ];

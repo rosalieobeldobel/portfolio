@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(252, 220, 220);
+  background-color: rgb(254, 222, 227);
 }
 
 /* Text Types */
@@ -81,7 +81,7 @@ body {
 /* sidebars */
 
 .navbarLeft {
-  background-color: white;
+  background-color: rgb(255, 246, 247);
   padding: 40px 20px;
   position: fixed;
   top: 0;
@@ -95,7 +95,7 @@ body {
 }
 
 .navbarRight {
-  background-color: white;
+  background-color: rgb(255, 246, 247);
   padding: 40px 20px;
   position: fixed;
   top: 0;

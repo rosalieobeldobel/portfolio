@@ -48,7 +48,7 @@ export default function ProjectDetailPage() {
             style={{
               width: "100%",
               height: "100%",
-              marginTop: "50px",
+              marginTop: "20px",
               display: "block",
               objectPosition: "center"
             }}
@@ -65,7 +65,7 @@ export default function ProjectDetailPage() {
               <h1 className={styles.normalHeader}>
                 Wireframes
               </h1>
-              <p className={styles.mediumText} style={{ marginTop: "50px"}}>
+              <p className={styles.mediumText} style={{ marginTop: "20px"}}>
                 Die Aufgabe war es nur für einen Klickpfad Wireframes zu erstellen. Die ENtscheidung viel auf das Erlernen einer Vokabel, wofür 
                 zwei verschiedene Versionen an WIreframes erstellt wurden. Die Intention bei den Wireframes war es die Menge an Informationen 
                 zu verringern, die wichtigen Informationen leichter ersichtlich zu gestalten und den Goal-Gradient Effekt anzupassen. Nach 
@@ -88,7 +88,7 @@ export default function ProjectDetailPage() {
               objectPosition: "center"
             }}
           />
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
               Als Erstes wurde die vorhandene Farbpalette analysiert, in primäre und Akzentfarben kategorisiert und die einzelnen Farben 
               aneinander angepasst. Dadurch entstand ein besserer Kontrast zwischen Text und Hintergrund. Gleichzeitig können die Nutzer:innen durch 
               die familiäre Einfärbung des Designs in den Farben rot oder grün intuitiver erkennen, ob ihre Antwort richtig oder falsch war. 

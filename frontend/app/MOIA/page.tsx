@@ -50,7 +50,7 @@ export default function ProjectDetailPage() {
             objectPosition: "center"
           }}
         />
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
           Ausgangspunkt der Recherche war die Frage, wie künstliche Intelligenz im 
           kreativen Kontext eingesetzt werden kann, ohne  dabei den Menschen zu ersetzen. 
           Dabei wurden Themen wie Mensch-Maschine-Interaktion, kollaborative Kunst, 
@@ -95,7 +95,7 @@ export default function ProjectDetailPage() {
           }}
         />
         
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
             Der Aufbau der Installation erfolgte größtenteils in Handarbeit. Die Wand 
             und Plattformen wurden konstruiert, Kabel verlegt und die technische 
             Infrastruktur eingerichtet. Der Prozess war geprägt von Improvisation, 

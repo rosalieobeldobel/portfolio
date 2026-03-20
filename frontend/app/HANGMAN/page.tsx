@@ -47,7 +47,7 @@ export default function ProjectDetailPage() {
             objectPosition: "center"
           }}
         />
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
             Zu Beginn wurde der Kommunikationsfluss der Website definiert. Dafür wurden zunächst alle benötigten Seiten identifiziert 
             sowie die erforderlichen Schnittstellen und Funktionen für die Umsetzung festgelegt. Das UI-Design wurde anschließend 
             in Figma konzipiert und diente während der Entwicklung als visuelle Orientierung, wodurch der Implementierungsprozess 
@@ -70,7 +70,7 @@ export default function ProjectDetailPage() {
           <h1 className={styles.smallHeader}>
             Backend
           </h1>
-            <p className={styles.mediumText} style={{ marginTop: "50px"}}>
+            <p className={styles.mediumText} style={{ marginTop: "20px"}}>
               Die gesamte Backend-Logik wurde im Ordner src umgesetzt und folgt einer klar strukturierten Express-Architektur 
               mit REST-Schnittstellen. In der index.ts wird das Spiel initialisiert und der Server gestartet. Die definierten 
               Routes stellen die einzelnen API-Endpunkte bereit und leiten Anfragen an die jeweiligen Controller weiter. Während 
@@ -87,7 +87,7 @@ export default function ProjectDetailPage() {
           <h1 className={styles.smallHeader}>
             Frontend
           </h1>
-            <p className={styles.mediumText} style={{ marginTop: "50px"}}>
+            <p className={styles.mediumText} style={{ marginTop: "20px"}}>
               Das Frontend wurde gemäß den Aufgabenanforderungen mit statischen HTML-Seiten umgesetzt, wobei für jede Page eine 
               eigene Datei erstellt wurde. Die Gestaltung erfolgt zentral über eine style.css, wodurch ein konsistentes Layout und 
               Design sichergestellt wird. Zusätzlich gibt es einen public-Ordner zur Strukturierung und Bereitstellung statischer 

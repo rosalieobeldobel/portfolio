@@ -45,22 +45,19 @@ export default function ProjectDetailPage() {
           />
   
           <p className={styles.quote} style={{ marginTop: "150px"}}>
-              Das Projekt RES ist eine in Unity entwickelte MR-Anwendung in Kooperation mit der Berufsfeuerwehr Münnchen. Als MR-Brille wurde 
+              Das Projekt RES ist eine in Unity entwickelte MR-Anwendung in Kooperation mit der Berufsfeuerwehr München. Als MR-Brille wurde 
               die Meta Quest 3 verwendet. Durch die MR-Anwendung sollen Personen, die die Erstsichtung an Einsatzstellen durchführen, assistiert werden. 
               Die Einsatzkräfte sollen verletzte Personen schnell und einfach digital markieren und kategorisieren können, um Entscheidungen effizient, 
-              nachvollziehbar und teamübergreifend sichtbar zu machen. Die MR-Anwendung soll eine Übersicht über die Einsatzstelle bieten, Informationen bzw. 
-              Daten über Patienten verwalten, die Kommunikation zwischen den einzelnen Instanzen koordinieren und EInsatzkräften gewährleisten, dass sie 
-              zu jeder Zeit ihre Hände frei haben.
+              nachvollziehbar und teamübergreifend sichtbar zu machen. 
           </p>
 
           {/* Discover */}
           <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Zu Beginn wurde die Homepage der Website und das Erlernen einer Vokabel anhand der UX-Regeln analysiert. 
-              Negatives wurde mit rot markiert und Positives mit grün. Dabei war es vor allem wichtig, die positiven Aspekte 
-              und den allgemeinen Charakter der Website später beizubehalten. Zusätzlich fand die Analyse von einer vergleichbaren Website 
-              names “Hey Japan” statt. Dadurch konnte herausgefunden werden welches Design Nutzer:innen von digitalen Lernplattformen gewohnt sind
-              und welche Erwartungen diese an Renshuu hätten.
+              Das Projekt wurde in einer Gruppe von vier Personen abgelegt. Zu diesen Personen zählen Aurelia ..., Ash ..., Lisa Bott und 
+              Rosalie Obeldobel. Die Recherche begann mit einem Besuch der Feuerwache 6. Dort erlangte man einen Einblick in jede Abteilung der 
+              Feuerwache und konnte erste Fragen klären. Des Weiteren wurde ausführliche Internetrecherche betrieben, alles auf einem FigJam-Board 
+              zusammengefasst und ausgewertet.
           </p>
           <img
             src="images/res/res_research.png"
@@ -88,25 +85,23 @@ export default function ProjectDetailPage() {
             }}
           />
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Als Erstes wurde die vorhandene Farbpalette analysiert, in primäre und Akzentfarben kategorisiert und die einzelnen Farben 
-              aneinander angepasst. Dadurch entstand ein besserer Kontrast zwischen Text und Hintergrund. Gleichzeitig können die Nutzer:innen durch 
-              die familiäre Einfärbung des Designs in den Farben rot oder grün intuitiver erkennen, ob ihre Antwort richtig oder falsch war. 
-              Für die Typografie verwendete man für Einheitlichkeit ausschließlich Roboto. Ein großer Vorteil dieser Schriftart ist es, dass sie 
-              sowohl auf Englisch und Deutsch, als auch auf Japanisch eine gute Lesbarkeit gewährleistet. Der Charakter der Website wurde 
-              verstärkt hervorgebracht durch die Verwendung des Logos in Form von Illustrationen.
+              Die Gruppe hat aus allen Problemstellen zwei detailierter betrachtet und mögliche Lösungen mit der Meta Quest 3 erarbeitet. Eine 
+              Präsentation vor Angestellten der Berufsfeuerwehr München lieferte umfangreiches Feedback und führte zu der Entscheidung eine MR-Anwendung 
+              für Erstsichtungen zu entwickeln. Ein genauer Ablauf mit allen Funktionen der MR-Anwendung wurde definiert und bildete den Orientrierungsrahmmen 
+              für die spätere Umsetzung.
           </p>
-
+          
           {/* Develop */}
           <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Develop</h2>
           <div style={{ marginTop: "10px" }}>
             <ImageSlider images={developImages} />
           </div>
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Die Recherche bildete den wichtigsten Teil des Projektes. Nur wenn man ein existierendes Problem findet kann man ein Design 
-              entwickeln, dass einen Mehrwert hat. Diese Phase war von dem direkten Kontakt mit den Menschen in der Innenstadt geprägt. Unternehmer:innen 
-              und Mitarbeiter:innen von kleinen oder mittelständischen Betrieben wurden interviewt. Als Gebiet wurde der Marienplatz und der anliegende 
-              Viktoalienmarkt ausgewählt. Dort herrschen durch die Fußgängerzone erschwerte Bedingungen für die Warenlieferungen, also ein idealer Ort 
-              für das Thema des Projektes.
+              Zuerst wurde das Konzept hinter der Anwendung definiert. Die MR-Anwendung soll eine Übersicht über die Einsatzstelle bieten, Informationen bzw. 
+              Daten über Patienten verwalten, die Kommunikation zwischen den einzelnen Instanzen koordinieren und Einsatzkräften gewährleisten, dass sie 
+              zu jeder Zeit ihre Hände frei zur Verfügung haben. Es sollte pro Gruppenmitglied eine Funktion entwickelt werden. Diese Funktionen umfassten die 
+              Personenmarkierung, eine Checkliste zur Einstufung der Patienten, eine Standordverfolgung mit Kartenansicht und eine Sprachsteuerung mit Audioaufnahme. 
+              Die MR-Anwendung wurde kooperativ über GitLab und mit Hilfe von Unity entwickelt.
           </p>
 
           {/* Deliver */}
@@ -119,16 +114,12 @@ export default function ProjectDetailPage() {
                 Deliver
               </h1>
               <p className={styles.mediumText}>
-                Die Installation nutzt Computer Vision und künstliche Intelligenz, um 
-                Nutzerbewegungen zu erfassen und daraus visuelle Kunstwerke zu generieren. 
-                Alle Daten und Interaktionen werden in TouchDesigner verarbeitet, wo die 
-                Echtzeit-Visualisierungen entstehen. Die Teilnehmenden werden so aktiv Teil 
-                des Kunstwerks.
+                Die fertige MR-Anwendung wurde auf der Feuerwache 6 präsentiert und ausgestellt. Während die Beuscher:innen RES mit Hilfe der Meta Quest 3 
+                ausprobieren konnten, haben wir diese einen quantitativen Umfragebogen ausfüllen lassen. Auf diese Art und Weise erhielten wir eine 
+                große Menge an Feedback-Material, die wir unserer Usability-Testing-Auswertung hinzufügen konnten. 
                 <br /><br />
-                Das Ergebnis ist eine interaktive, kollaborative Installation, die zeigt, 
-                wie künstliche Intelligenz Menschen zusammenbringen kann. MOIA schafft einen 
-                Raum für gemeinsames Erleben, kreative Zusammenarbeit und neue Perspektiven auf KI. 
-                Das Projekt vereint Technik, Design und Teamarbeit zu einem lebendigen Gesamterlebnis.
+                Die Ausstellung zeigte, dass die futuristische und prototypische Anwendung ein existierendes Problem anspricht. Viele Besucher:innen der 
+                Feuerwehr hatten ein großes Interesse an unserem Lösungsansatz und dessen Weiterentwicklung in der Zukunft. 
               </p>
             </div>
           </div>

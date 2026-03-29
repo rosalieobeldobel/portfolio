@@ -13,6 +13,17 @@ export default function MenuLeft() {
           <ul className={styles.socialLinks}>
             <li>
                 <a
+                  href="https://gitlab.lrz.de/000000003B9C4DD8"
+                  aria-label="GitLab" 
+                  className={styles.socialLink}
+                >      
+                  <img
+                    src="/icons/gitlab.png"
+                    alt="GitLab"
+                    className={styles.socialIcon}
+                  />
+                </a>
+                <a
                   href="https://github.com/rosalieobeldobel"
                   aria-label="GitHub" 
                   className={styles.socialLink}

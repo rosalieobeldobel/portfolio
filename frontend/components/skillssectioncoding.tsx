@@ -7,9 +7,9 @@ export default function SkillsSectionCoding() {
   const skills = [
     { name: "HTML / CSS", level: 4 },
     { name: "JavaScript", level: 3 },
-    { name: "React / Next.js", level: 2 },
+    { name: "React", level: 2 },
     { name: "Python", level: 4 },
-    { name: "Express.js / REST-APIs", level: 2 },
+    { name: "Node.js: Next.js / Express.js / REST-APIs", level: 3 },
   ];
 
   return (

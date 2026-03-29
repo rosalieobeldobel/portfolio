@@ -83,17 +83,23 @@ export default function AboutMePage() {
         Lebenslauf:
       </p>
 
-      <img 
-        src="/icons/qrcode.png"
-        alt="QR-Code"
-          style={{
-            width: "300px",
-            height: "300px",
-            marginLeft: "500px",
-            marginTop: "100px",
-            marginBottom: "300px",
-          }}
-      />
+      <a
+        href="https://www.figma.com/design/YQx1lJunvLOfE2nVB6UTb0/Lebenslauf?node-id=0-1&t=S6F3KkzamiavN9mx-1"
+        aria-label="Lebenslauf" 
+        className={styles.socialLink}
+      > 
+        <img 
+          src="/icons/qrcode.png"
+          alt="QR-Code"
+            style={{
+              width: "300px",
+              height: "300px",
+              marginLeft: "500px",
+              marginTop: "100px",
+              marginBottom: "300px",
+            }}
+        />
+      </a>
 
     </div>
   );

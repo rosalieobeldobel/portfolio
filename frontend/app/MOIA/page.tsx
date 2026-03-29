@@ -1,5 +1,4 @@
 // Author: Rosalie Obeldobel
-
 import styles from '@/app/page.module.css';
 import MenuLeft from "@/components/menuleft";
 import MenuRight from "@/components/menuright";
@@ -8,73 +7,56 @@ import VideoOnScroll from "@/components/videoscrolltrigger";
 export default function ProjectDetailPage() {
   return (
     <div style={{ position: "relative" }}>
-      {/* Linke Sidebar */}
       <MenuLeft />
-
-      {/* Rechte Sidebar */}
       <MenuRight />
 
-      {/* Project Process*/}
       <main className={styles.mainContent}> 
-        <h1 className={styles.normalHeader}>MOIA - Museum Of Interactive Art</h1>
+        {/* Header steht noch im mainContent (zentriert) */}
+        <h1 className={styles.normalHeader} style={{ margin: "50px 0" }}>
+          MOIA - Museum Of Interactive Art
+        </h1>
+
+        {/* BILD: Berührt die Sidebars, weil es direkt im mainContent liegt */}
         <img
           src="images/moia/moia-start.jpeg"
           alt="MOIA Start"
-          style={{
-            width: "1200px",
-            height: "700px",
-            marginTop: "50px",
-            marginLeft: "-100px"
-          }}
+          className={styles.titleImage}
         />
-        <p className={styles.quote} style={{ marginTop: "150px" }}>
-            MOIA ist eine räumliche Installation, die künstliche Intelligenz als 
-            kreativen Partner erlebbar macht. Ziel des Projekts ist es zu zeigen, 
-            dass KI nicht trennt, sondern Menschen verbindet, indem sie gemeinsames 
-            künstlerisches Erleben ermöglicht. Zwei Plattformen, eine Wand und viele 
-            Perspektiven schaffen einen Raum, in dem Mensch und Maschine gemeinsam 
-            Kunst erschaffen.
-        </p>
 
-        {/* Discover*/}
-        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
-        <img
-          src="images/moia/moia_discover.jpeg"
-          alt="Recherche"
-          className={styles.image}
-          style={{
-            width: "100%",
-            height: "100%",
-            marginTop: "50px",
-            display: "block",
-            objectPosition: "center"
-          }}
-        />
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
-          Ausgangspunkt der Recherche war die Frage, wie künstliche Intelligenz im 
-          kreativen Kontext eingesetzt werden kann, ohne  dabei den Menschen zu ersetzen. 
-          Dabei wurden Themen wie Mensch-Maschine-Interaktion, kollaborative Kunst, 
-          Computer Vision und interaktive Installationen untersucht. Die Erkenntnisse 
-          bildeten die Grundlage für das konzeptionelle und technische Design der Installation.
-        </p>
-  
-        {/* Define*/}
+        {/* TEXT-BEREICH: Alles hier drin hält 100px Abstand */}
+        <div className={styles.textContent}>
+          <p className={styles.quote} style={{ marginTop: "150px" }}>
+              MOIA ist eine räumliche Installation...
+          </p>
+
+          <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>
+            Discover
+          </h2>
+          
+          <img
+            src="images/moia/moia_discover.jpeg"
+            alt="Recherche"
+            style={{ width: "100%", marginTop: "50px" }}
+          />
+          
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
+            Ausgangspunkt der Recherche war die Frage...
+          </p>
+        </div>
+
+        {/* CONTAINER MIT BILD UND TEXT (Define) */}
         <div className={styles.imageTextContainer}>
           <img
             src="images/moia/moia_define.jpeg"
             alt="Recherche"
             className={styles.image}
+            style={{ width: "50%" }}
           />
-          <div className={styles.textContent}>
-            <h1 className={styles.normalHeader}>
-              Define
-            </h1>
+          <div className={styles.textContent} style={{ padding: 0, width: "50%" }}> 
+            {/* Hier padding 0, weil der Parent (imageTextContainer) schon padding hat */}
+            <h1 className={styles.normalHeader}>Define</h1>
             <p className={styles.mediumText}>
-              In der Planungsphase wurden Konzept, Raumaufteilung, technische Umsetzung 
-              und Interaktionsabläufe definiert. Es entstand ein Zusammenspiel aus Design, 
-              Technologie und Nutzererlebnis. Die Installation wurde so konzipiert, dass 
-              Nutzer*innen aktiv in den kreativen Prozess eingebunden werden und die KI 
-              in Echtzeit auf ihre Bewegungen reagiert.
+              In der Planungsphase wurden Konzept...
             </p>
           </div>
         </div>

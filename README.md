@@ -35,4 +35,7 @@ npm run dev
 4. Portfolio lokal im Server anschauen
 http://localhost:3000
 
+5. Portfolio direkt auf der Website anschauen
+https://portfolio-iota-ten-doq7ll6i8w.vercel.app/
+
 **Hinweis:** Dies ist mein persönliches Portfolio, das laufend aktualisiert wird, um meine aktuellen Projekte und Design-Skills zu präsentieren.

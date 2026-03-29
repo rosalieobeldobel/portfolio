@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-body {
-  background-color: rgb(254, 222, 227);
-}
 
 /* Text Types */
 
@@ -10,28 +7,28 @@ body {
   color: black;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .smallHeader {
   color: black;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .designHeader {
   color: black;
   font-family: 'IBM Plex Serif', serif;
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .monoHeader {
   color: black;
   font-family:'IBM Plex Mono', monospace;
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .smallText {

@@ -1,6 +1,5 @@
 // Author: Rosalie Obeldobel
-
-import SkillItem from "@/components/skillItem";
+import SkillItem from "@/components/skillItem"; // Achte auf Kleinschreibung, falls deine Datei so heißt
 import styles from '@/app/page.module.css';
 
 export default function SkillsSectionDesign() {
@@ -14,6 +13,9 @@ export default function SkillsSectionDesign() {
 
   return (
     <section className={styles.skillsSection}>
+
+      <h2 className={styles.designHeader} style={{ marginBottom: '2rem' }}>Design Skills</h2>
+      
       <div className={styles.skillsList}>
         {skills.map((skill) => (
           <SkillItem

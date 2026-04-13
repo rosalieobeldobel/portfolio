@@ -1,188 +1,11 @@
+/* ==========================================
+   1. GLOBAL LAYOUT (Wrapper & Main)
+   ========================================== */
 
-/* Text Types */
-
-.normalHeader {
-  color: black;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 48px;
-  font-weight: 300;
+.pageWrapper {
+  position: relative;
+  min-height: 100vh;
 }
-
-.smallHeader {
-  color: black;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.designHeader {
-  color: black;
-  font-family: 'IBM Plex Serif', serif;
-  font-size: 48px;
-  font-weight: 300;
-}
-
-.monoHeader {
-  color: black;
-  font-family:'IBM Plex Mono', monospace;
-  font-size: 48px;
-  font-weight: 300;
-}
-
-.smallText {
-  color: black;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 8px;
-}
-
-.mediumText {
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 16px;
-}
-
-.bigText {
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 24px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.imgText {
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 0.1rem;
-}
-
-.quote {
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 24px;
-  margin-top: 400px;
-  text-align: center;
-}
-
-/* Buttons */
-
-.highlightButton {
-  background-color: rgb(192, 122, 122);
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 16px;
-  font-size: 16px;
-}
-
-/* sidebars */
-
-.navbarLeft {
-  background-color: rgb(255, 246, 247);
-  padding: 40px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh; 
-  overflow-y: auto; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.navbarRight {
-  background-color: rgb(255, 246, 247);
-  padding: 40px 20px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 100vh; 
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-  box-sizing: border-box;
-}
-
-.menuList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
-}
-
-.menuItem {
-  color: rgb(0, 0, 0);
-  font-family:'IBM PLex Sans', sans-serif;
-  font-size: 24px;
-  text-align: left;
-  padding-left: 10px;
-}
-
-.menuItem:hover {
-  opacity: 0.7;
-}
-
-
-/* Links */
-
-.socialLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  margin-top: 0;
-  padding: 0;
-  gap: 5rem;
-}
-
-.socialLink {
-  color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  align-items: center;
-  padding: 10px;
-  gap:0.5rem;
-}
-
-.socialLink:hover {
-  opacity: 0.7;
-}
-
-.socialIcon {
-  width: 40px;
-  height: 40px;
-  display: block;
-}
-
-
-/* Grids and Containers */
-
-.navbarLeft, .navbarRight {
-  background-color: rgb(255, 246, 247);
-  padding: 40px 20px;
-  position: fixed;
-  top: 0;
-  width: 200px;
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box; 
-  z-index: 10;
-}
-
-.navbarLeft { left: 0; }
-.navbarRight { right: 0; }
-
 
 .mainContent {
   margin-left: 200px; 
@@ -196,9 +19,238 @@
   z-index: 1;
 }
 
+/* ==========================================
+   SIDEBARS & SOCIALS
+   ========================================== */
+
+.navbarLeft {
+  background-color: rgb(255, 246, 247);
+  padding: 40px 20px;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  z-index: 10;
+}
+
+.navbarRight {
+  right: 0; /* Das zwingt die Sidebar an den rechten Rand */
+  left: auto; /* Sicherstellen, dass sie nicht links fixiert ist */
+  background-color: rgb(255, 246, 247);
+  padding: 40px 20px;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 1.5rem; /* Der Abstand zwischen den Icons */
+  margin-bottom: 20px;
+}
+
+.socialIcon {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+/* ==========================================
+   MENU LISTS (In den Sidebars)
+   ========================================== */
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentriert die Links in der Sidebar */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.menuItem {
+  color: rgb(0, 0, 0);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px; 
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+/* WICHTIG: Damit die Links keine hässliche Unterstreichung haben */
+.menuItem a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.menuItem:hover {
+  opacity: 0.6;
+}
+
+/* ==========================================
+   2. TEXT TYPES (Typography)
+   ========================================== */
+
+/* Gemeinsame Basis für Header */
+.normalHeader, .designHeader, .monoHeader, .smallHeader {
+  color: black;
+  font-weight: 300;
+  margin: 0; /* Verhindert unerwartete Abstände */
+}
+
+.normalHeader {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 48px;
+}
+
+.smallHeader {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 24px;
+}
+
+.designHeader {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 48px;
+}
+
+.monoHeader {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+}
+
+/* Fließtext */
+.smallText { 
+  font-size: 8px; 
+  font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+.mediumText { 
+  font-size: 16px; 
+  font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+.bigText {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.quote {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 400px; /* Reduziert von 400px für bessere Usability */
+  text-align: center;
+  max-width: 800px;
+}
+
+.titleQuote {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 50px; /* Reduziert von 400px für bessere Usability */
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ==========================================
+   ABOUT ME LAYOUTS
+   ========================================== */
+
+.aboutMeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten auf Desktop */
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 400px;
+}
+
+.skillsColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeSection {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.footerCTA {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qrCodeWrapper {
+  margin-top: 50px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.qrCodeWrapper:hover {
+  transform: scale(1.05);
+}
+
+.qrCodeImage {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+/* ==========================================
+   3. CONTAINERS & MEDIA (Projects)
+   ========================================== */
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 100px;
+  width: 100%;       
+  max-width: 1000px;  
+  padding: 80px 100px; 
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.imageTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  /* Der exakt gleiche Abstand wie oben */
+  margin: 120px auto 120px auto; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
 .titleImage {
   width: 100%;         
-  max-width: none;     
   height: auto;
   aspect-ratio: 16 / 9; 
   object-fit: cover;
@@ -206,204 +258,468 @@
   margin-top: 50px;
 }
 
-.textContent {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;       
-  max-width: 1000px;  
-  padding: 50px 100px; 
-  box-sizing: border-box;
-}
-
-.imageTextContainer {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  margin-top: 150px;
-  width: 100%;
-  padding: 0 100px;    
-  box-sizing: border-box;
-}
-
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.projectCardImage {
-  width: 100px;
-  height: 600px;
+.image {
+  width: 100%; /* Flexibler als 500px */
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
-  object-position: center;
-  position: relative;
 }
 
-.projectCardImage:hover {
-  transition: 0.4s ease;
-  transform: scaleX(2);
+.gridWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .projectGrid {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 150px;
+  /* Jede Spalte ist so breit wie der Container (100px) */
+  grid-auto-columns: 100px; 
+  justify-content: center;
+  align-items: center;
+  /* Die Höhe orientiert sich an deinen 1800px Proportionen, aber skaliert runter */
+  height: 600px; 
+  gap: 40px; /* Ein kleiner Spalt sieht bei Opacity-Hover oft besser aus */
+  padding-top: 50px;
+}
+
+.projectCard {
+  position: relative;
+}
+
+.projectCardImageContainer {
+  position: relative;
+  width: 100px; /* Breite der Karte */
+  height: 600px; /* Höhe der Karte */
+  overflow: hidden;
+  transition: opacity 0.4s ease; /* Transition für Opacity */
+}
+
+.projectCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Füllt den Container perfekt aus */
+  display: block;
+}
+
+/* HOVER: Nur Opacity ändern, keine Breitenänderung mehr */
+.projectCardImageContainer:hover {
+  opacity: 0.7; /* Wird leicht transparent */
+  cursor: pointer;
+}
+
+/* Container für das große Startbild */
+.heroImageContainer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto 120px auto; /* Auch hier 120px nach unten */
+  display: flex;
   justify-content: center;
 }
 
-.image {
-  width: 500px;
+/* Bild für Discover (volle Breite) */
+.fullWidthImage {
+  width: 100%;
   height: auto;
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }
 
-/* Skills */
-
-.skillItem {
+/* Sektions-Abstände */
+.projectSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 120px auto; 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-.skillName {
+/* Der GitHub Link Bereich am Ende */
+.projectLinkWrapper {
+  display: inline-block;
+  margin: 50px 0 200px 0;
+  transition: transform 0.3s ease;
+}
+
+.projectLinkWrapper:hover {
+  transform: translateY(-10px);
+}
+
+.projectLinkIcon {
+  width: 150px; /* Angemessene Größe für das Icon */
+  height: auto;
+  display: block;
+}
+
+/* Footer CTA Zentrierung */
+.footerCTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  /* Hier kein margin-bottom nötig, da es das Ende ist */
+  margin-top: 0;
+}
+
+/* ==========================================
+   HOMEPAGE SPEZIFISCH 
+   ========================================== */
+.heroContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px; 
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imageWrapper {
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.pfpImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroText {
+  position: absolute;
+  top: 20%;
+  left: 55%; 
+  width: 55%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+/* ==========================================
+   PROJECT DETAIL PAGES 
+   ========================================== */
+
+.heroImageContainer {
+  width: 100%;
+  max-width: 1100px; /* Zentriert und begrenzt die Breite des Startbildes */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.projectSection {
+  width: 100%;
+  max-width: 1000px; /* Text und Inhalt bleiben in einer gut lesbaren Breite */
+  margin: 120px auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullWidthImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px; /* Optional: passt zu deinem sauberen Design */
+  margin: 40px 0;
+}
+
+.sliderWrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px 0;
+}
+
+.projectLinkWrapper {
+  display: inline-block;
+  margin: 50px 0 150px 0;
+  transition: transform 0.3s ease;
+}
+
+.projectLinkWrapper:hover {
+  transform: translateY(-8px); /* Kleiner Hover-Effekt für Interaktivität */
+}
+
+.projectLinkIcon {
+  width: 150px; /* Damit das GitHub/Icon-Bild nicht den Bildschirm sprengt */
+  height: auto;
+}
+
+/* ==========================================
+   4. COMPONENTS (Skills, Forms, Buttons)
+   ========================================== */
+
+.form {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.highlightButton, .sliderButton, .form button {
+  background-color: rgb(255, 134, 134);
   color: black;
-  font-family: 'IBM PLex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.highlightButton:hover, .sliderButton:hover, .form button:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================
+   SKILLS COMPONENTS
+   ========================================== */
+
+.skillItem {
+  display: flex;
+  justify-content: space-between; /* Name links, Punkte rechts */
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Damit die Zeile nicht zu lang wird */
+  margin-bottom: 1rem;
+}
+
+.skillName {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
+  color: black;
 }
 
 .scale {
   display: flex;
-  gap: 6px;
+  gap: 8px; /* Abstand zwischen den Punkten */
+}
+
+.scaleDot, .scaleDotActive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .scaleDot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
+  background-color: #ddd; /* Inaktiver Punkt (Grau) */
 }
 
 .scaleDotActive {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: black;
+  background-color: black; /* Aktiver Punkt (Schwarz) */
+}
+
+/* Falls du die Skills in zwei Spalten anzeigen willst */
+.skillsLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 400px;
 }
 
 .skillsSection {
-  margin-left: auto;   
-  margin-right: auto;  
-  margin-top: 50px;
-}
-
-.title {
-  font-size: 24px;
-  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 600px; /* Begrenzt die Breite der Liste für bessere Lesbarkeit */
+  margin: 50px auto; /* Zentriert die Sektion und gibt Abstand nach oben/unten */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skillsList {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
-}
-
-.skillsLayout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 400px;
-}
-
-/* Forms */
-
-.form {
-  width: 900px;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  
-}
-
-.form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-}
-
-.form input,
-.form textarea {
-  padding: 0.6rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-color: rgb(255, 134, 134);
-  background-color: rgb(255, 255, 255);
-  font-family: 'Lucida Sans';
-  color: black;
-}
-
-.form button {
-  margin-top: 1rem;
-  padding: 0.7rem;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  background-color: rgb(255, 134, 134);
-}
-
-.error {
-  color: #c00;
-}
-
-.success {
-  color: #0a8a2a;
-}
-
-/* Slider */
-.sliderContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.sliderFrame {
-  position: relative;
+  gap: 0.5rem; /* Abstand zwischen den einzelnen Skill-Zeilen */
   width: 100%;
-  margin: 0 auto;
-  border-radius: 0;
-  overflow: hidden;
-  height: auto; /* später gleich aspect-ratio */
-  aspect-ratio: 16 / 9;
 }
 
-.sliderControls {
+/* ==========================================
+   VIDEO COMPONENT
+   ========================================== */
+
+.videoContainer {
+  width: 100%;
+  max-width: 1000px; /* Begrenzt die Breite auf Desktop */
+  margin: 80px auto; /* Zentriert das Video mit Abstand oben/unten */
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
 }
 
-.sliderButton {
-  padding: 0.6rem 1.2rem;
-  background-color: rgb(255, 134, 134);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-family: 'IBM PLex Sans', sans-serif;
+.scrollVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px; /* Optional: Ein kleiner Abrundungseffekt sieht modern aus */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Dezenter Schatten */
 }
 
-.sliderButton:hover {
-  transform: scale(1.05);
-  opacity: 0.85;
-}
+/* ==========================================
+   5. RESPONSIVE DESIGN (Handy & Tablet)
+   ========================================== */
 
-.sliderCounter {
-  font-family: 'IBM PLex Sans', sans-serif;
-  font-size: 14px;
-  color: black;
+@media (max-width: 1024px) {
+  .navbarLeft, .navbarRight {
+    display: none; /* Sidebars auf Tablets/Handys ausblenden */
+  }
+
+  .mainContent {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .textContent, .imageTextContainer {
+    padding: 40px 20px;
+  }
+
+  .imageTextContainer {
+    flex-direction: column; /* Bild und Text untereinander */
+    gap: 2rem;
+  }
+
+  .normalHeader, .designHeader, .monoHeader {
+    font-size: 32px; /* Kleinere Header für kleine Bildschirme */
+  }
+
+  .skillsLayout {
+    grid-template-columns: 1fr; /* Skills untereinander */
+    margin-top: 80px;
+  }
+
+  .mainContent {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* HIER ERGÄNZEN: Homepage Handy-Anpassung */
+  .heroContainer {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .imageWrapper {
+    width: 100%; 
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .heroText {
+    position: static; /* Wichtig: Hebt das Overlay auf Handy auf */
+    width: 100%;
+    padding: 40px 0;
+    left: 0;
+    text-align: center; /* Optional: Text zentrieren auf Handy */
+  }
+
+  .navbarLeft, 
+  .navbarRight {
+    display: none !important; 
+  }
+
+  /* Main Content nimmt jetzt den vollen Platz ein */
+  .mainContent {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .projectGrid {
+    /* Auf Mobile schalten wir von Spalten auf Zeilen um */
+    grid-auto-flow: row; 
+    grid-template-columns: 1fr; /* Volle Breite */
+    grid-auto-columns: auto;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projectCardImageContainer {
+    position: relative;
+    /* HIER: Die Breite der geschlossenen Karte (Standard: 150px) */
+    width: 200px; 
+    /* HIER: Die Höhe der Karte (Standard: 600px) */
+    height: 500px; 
+    overflow: hidden;
+    transition: width 0.4s ease;
+  }
+  
+  .projectCardImage {
+    /* HIER: WICHTIG! Die Breite des Bildes sollte mindestens so groß sein, 
+       wie die Karte im AUSGEFAHRENEN Zustand sein soll. */
+    width: 200px; 
+    height: 500px; /* Muss die gleiche Höhe wie der Container haben */
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Hover-Zustand */
+  .projectCardImageContainer:hover {
+    /* HIER: Wie weit soll die Karte beim Hovern ausfahren? */
+    width: 200px; 
+  }
+
+  .skillsLayout {
+    grid-template-columns: 1fr; /* Auf Handys untereinander */
+    gap: 2rem;
+  }
+  
+  .skillItem {
+    max-width: 100%; /* Volle Breite nutzen */
+  }
+
+  .skillsSection {
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+
+  .aboutMeGrid, 
+  .skillsLayout {
+    grid-template-columns: 1fr; 
+    gap: 60px;
+    padding: 0 20px;
+  }
+  
+  .qrCodeImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Verhindert zu große Abstände auf kleinen Bildschirmen */
+  .resumeSection {
+    margin-bottom: 100px;
+  }
+
+  .videoContainer {
+    margin: 40px 0;
+    padding: 0 10px;
+  }
+
+  .projectSection {
+    margin: 60px 0;
+    padding: 0 15px;
+  }
+
+  .heroImageContainer {
+    margin: 30px 0;
+  }
+
+  .projectLinkIcon {
+    width: 100px; /* Kleineres Icon auf Mobile */
+  }
 }

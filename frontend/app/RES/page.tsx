@@ -1,9 +1,9 @@
+// Author: Rosalie Obeldobel
 import styles from '@/app/page.module.css';
 import MenuLeft from "@/components/menuleft";
 import MenuRight from "@/components/menuright";
 import VideoOnScroll from "@/components/videoscrolltrigger";
 import ImageSlider from "@/components/imageslider";
-
 
 export default function ProjectDetailPage() {
 
@@ -23,7 +23,7 @@ export default function ProjectDetailPage() {
     ];
 
     return(
-      <div style={{ position: "relative" }}>
+      <div className={styles.pageWrapper}>
         {/* Linke Sidebar */}
         <MenuLeft />
   
@@ -32,88 +32,79 @@ export default function ProjectDetailPage() {
   
         {/* Project */}
         <main className={styles.mainContent}> 
-          <h1 className={styles.normalHeader}>RES - Rapid Emergency Scoping</h1>
-          <img
-            src="images/res/RES-Logo.jpg"
-            alt="RES Start"
-            style={{
-              width: "1300px",
-              height: "700px",
-              marginTop: "50px",
-              marginLeft: "-200px"
-            }}
-          />
+          <h1 className={styles.normalHeader} style={{ marginTop: "80px" }}>RES - Rapid Emergency Scoping</h1>
+          
+          <div className={styles.heroImageContainer}>
+            <img
+              src="images/res/RES-Logo.jpg"
+              alt="RES Start"
+              className={styles.titleImage}
+            />
+          </div>
   
-          <p className={styles.quote} style={{ marginTop: "150px"}}>
+          <p className={styles.titleQuote}>
               Das Projekt RES ist eine in Unity entwickelte MR-Anwendung in Kooperation mit der Berufsfeuerwehr München. Als MR-Brille wurde 
               die Meta Quest 3 verwendet. Durch die MR-Anwendung sollen Personen, die die Erstsichtung an Einsatzstellen durchführen, assistiert werden. 
               Die Einsatzkräfte sollen verletzte Personen schnell und einfach digital markieren und kategorisieren können, um Entscheidungen effizient, 
               nachvollziehbar und teamübergreifend sichtbar zu machen. 
           </p>
 
-          {/* Discover */}
-          <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Das Projekt wurde in einer Gruppe von vier Personen abgelegt. Zu diesen Personen zählen Aurelia ..., Ash ..., Lisa Bott und 
-              Rosalie Obeldobel. Die Recherche begann mit einem Besuch der Feuerwache 6. Dort erlangte man einen Einblick in jede Abteilung der 
-              Feuerwache und konnte erste Fragen klären. Des Weiteren wurde ausführliche Internetrecherche betrieben, alles auf einem FigJam-Board 
-              zusammengefasst und ausgewertet.
-          </p>
-          <img
-            src="images/res/res_research.png"
-            alt="research"
-            style={{
-              width: "100%",
-              height: "100%",
-              marginTop: "50px",
-              display: "block",
-              objectPosition: "center"
-            }}
-          />
+          {/* Discover Section */}
+          <section className={styles.projectSection}>
+            <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Discover</h2>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+                Das Projekt wurde in einer Gruppe von vier Personen abgelegt. Zu diesen Personen zählen Aurelia ..., Ash ..., Lisa Bott und 
+                Rosalie Obeldobel. Die Recherche begann mit einem Besuch der Feuerwache 6. Dort erlangte man einen Einblick in jede Abteilung der 
+                Feuerwache und konnte erste Fragen klären. Des Weiteren wurde ausführliche Internetrecherche betrieben, alles auf einem FigJam-Board 
+                zusammengefasst und ausgewertet.
+            </p>
+            <img
+              src="images/res/res_research.png"
+              alt="research"
+              className={styles.fullWidthImage}
+              style={{ marginTop: "40px" }}
+            />
+          </section>
 
-          {/* Development */}
-          <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Define</h2>
-          <img
-            src="images/res/res_userflow.png"
-            alt="Userflow"
-            style={{
-              width: "100%",
-              height: "100%",
-              marginTop: "50px",
-              display: "block",
-              objectPosition: "center"
-            }}
-          />
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Die Gruppe hat aus allen Problemstellen zwei detailierter betrachtet und mögliche Lösungen mit der Meta Quest 3 erarbeitet. Eine 
-              Präsentation vor Angestellten der Berufsfeuerwehr München lieferte umfangreiches Feedback und führte zu der Entscheidung eine MR-Anwendung 
-              für Erstsichtungen zu entwickeln. Ein genauer Ablauf mit allen Funktionen der MR-Anwendung wurde definiert und bildete den Orientrierungsrahmmen 
-              für die spätere Umsetzung.
-          </p>
+          {/* Define Section */}
+          <section className={styles.projectSection}>
+            <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Define</h2>
+            <img
+              src="images/res/res_userflow.png"
+              alt="Userflow"
+              className={styles.fullWidthImage}
+            />
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+                Die Gruppe hat aus allen Problemstellen zwei detailierter betrachtet und mögliche Lösungen mit der Meta Quest 3 erarbeitet. Eine 
+                Präsentation vor Angestellten der Berufsfeuerwehr München lieferte umfangreiches Feedback und führte zu der Entscheidung eine MR-Anwendung 
+                für Erstsichtungen zu entwickeln. Ein genauer Ablauf mit allen Funktionen der MR-Anwendung wurde definiert und bildete den Orientrierungsrahmmen 
+                für die spätere Umsetzung.
+            </p>
+          </section>
           
-          {/* Develop */}
-          <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Develop</h2>
-          <div style={{ marginTop: "10px" }}>
-            <ImageSlider images={developImages} />
-          </div>
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
-              Zuerst wurde das Konzept hinter der Anwendung definiert. Die MR-Anwendung soll eine Übersicht über die Einsatzstelle bieten, Informationen bzw. 
-              Daten über Patienten verwalten, die Kommunikation zwischen den einzelnen Instanzen koordinieren und Einsatzkräften gewährleisten, dass sie 
-              zu jeder Zeit ihre Hände frei zur Verfügung haben. Es sollte pro Gruppenmitglied eine Funktion entwickelt werden. Diese Funktionen umfassten die 
-              Personenmarkierung, eine Checkliste zur Einstufung der Patienten, eine Standordverfolgung mit Kartenansicht und eine Sprachsteuerung mit Audioaufnahme. 
-              Die MR-Anwendung wurde kooperativ über GitLab und mit Hilfe von Unity entwickelt.
-          </p>
+          {/* Develop Section */}
+          <section className={styles.projectSection}>
+            <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Develop</h2>
+            <div className={styles.sliderWrapper}>
+              <ImageSlider images={developImages} />
+            </div>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+                Zuerst wurde das Konzept hinter der Anwendung definiert. Die MR-Anwendung soll eine Übersicht über die Einsatzstelle bieten, Informationen bzw. 
+                Daten über Patienten verwalten, die Kommunikation zwischen den einzelnen Instanzen koordinieren und Einsatzkräften gewährleisten, dass sie 
+                zu jeder Zeit ihre Hände frei zur Verfügung haben. Es sollte pro Gruppenmitglied eine Funktion entwickelt werden. Diese Funktionen umfassten die 
+                Personenmarkierung, eine Checkliste zur Einstufung der Patienten, eine Standordverfolgung mit Kartenansicht und eine Sprachsteuerung mit Audioaufnahme. 
+                Die MR-Anwendung wurde kooperativ über GitLab und mit Hilfe von Unity entwickelt.
+            </p>
+          </section>
 
-          {/* Deliver */}
-          <div className={styles.imageTextContainer}>
-            <div style={{ width: "400px" }}>
+          {/* Deliver Section */}
+          <div className={styles.imageTextContainer} style={{ marginTop: "100px" }}>
+            <div style={{ flex: "1", maxWidth: "400px" }}>
               <VideoOnScroll src="/videos/res_aufnahme.mp4" />
             </div>
-            <div className={styles.textContent}>
-              <h1 className={styles.normalHeader}>
-                Deliver
-              </h1>
-              <p className={styles.mediumText}>
+            <div className={styles.textContent} style={{ flex: "1.5" }}>
+              <h2 className={styles.normalHeader}>Deliver</h2>
+              <p className={styles.mediumText} style={{ marginTop: "20px" }}>
                 Die fertige MR-Anwendung wurde auf der Feuerwache 6 präsentiert und ausgestellt. Während die Beuscher:innen RES mit Hilfe der Meta Quest 3 
                 ausprobieren konnten, haben wir diese einen quantitativen Umfragebogen ausfüllen lassen. Auf diese Art und Weise erhielten wir eine 
                 große Menge an Feedback-Material, die wir unserer Usability-Testing-Auswertung hinzufügen konnten. 
@@ -124,30 +115,26 @@ export default function ProjectDetailPage() {
             </div>
           </div>
 
-          <p className={styles.normalHeader} style={{ marginTop: "150px"}}>
-            Neugierig geworden?<br />
-            hier geht es zum
-          </p>
-          <p className={styles.monoHeader}>
-            GitLab Repository:
-          </p>
-          <a
-            href="https://gitlab.lrz.de/mixedreality2526/ws25/firefighters/groupproject-k"
-            aria-label="res gitlab repo" 
-            className={styles.socialLink}
-          > 
-          <img 
-            src="/icons/gitlab.png"
-            alt="gitlab icon"
-              style={{
-                width: "30%",
-                height: "30%",
-                marginLeft: "500px",
-                marginTop: "100px",
-                marginBottom: "300px",
-              }}
-          />
-        </a>
+          {/* Footer CTA Section */}
+          <section className={styles.footerCTA}>
+            <p className={styles.normalHeader}>
+              Neugierig geworden?<br />
+              hier geht es zum
+            </p>
+            <p className={styles.monoHeader} style={{ fontWeight: "500"}}>GitLab Repository:</p>
+            <a
+              href="https://gitlab.lrz.de/mixedreality2526/ws25/firefighters/groupproject-k"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLinkWrapper}
+            > 
+              <img 
+                src="/icons/gitlab.png"
+                alt="gitlab icon"
+                className={styles.projectLinkIcon}
+              />
+            </a>
+          </section>
         </main>
       </div>
     );

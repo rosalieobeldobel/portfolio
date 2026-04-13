@@ -1,6 +1,5 @@
 // Author: Rosalie Obeldobel
-
-import SkillItem from "@/components/skillItem";
+import SkillItem from "@/components/skillItem"; // Achte auf den exakten Dateinamen
 import styles from '@/app/page.module.css';
 
 export default function SkillsSectionCoding() {
@@ -14,6 +13,9 @@ export default function SkillsSectionCoding() {
 
   return (
     <section className={styles.skillsSection}>
+        
+      <h2 className={styles.monoHeader} style={{ marginBottom: '2rem' }}>Coding Skills</h2>
+      
       <div className={styles.skillsList}>
         {skills.map((skill) => (
           <SkillItem

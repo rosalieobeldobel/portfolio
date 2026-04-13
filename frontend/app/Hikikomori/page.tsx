@@ -1,113 +1,98 @@
+// Author: Rosalie Obeldobel
 import styles from '@/app/page.module.css';
 import MenuLeft from "@/components/menuleft";
 import MenuRight from "@/components/menuright";
 import VideoOnScroll from "@/components/videoscrolltrigger";
 
-
-
 export default function ProjectDetailPage() {
   return (
-    <div style={{ position: "relative" }}>
-      {/* Linke Sidebar */}
+    <div className={styles.pageWrapper}>
       <MenuLeft />
-
-      {/* Rechte Sidebar */}
       <MenuRight />
 
-      {/* Project */}
       <main className={styles.mainContent}> 
-        <h1 className={styles.normalHeader}>Hikikomori</h1>
-        <img
-          src="images/hikikomori/poster.jpg"
-          alt="Hikikomori Start"
-          style={{
-            width: "1200px",
-            height: "700px",
-            marginTop: "50px",
-            marginLeft: "-100px"
-          }}
-        />
+        {/* Header Section */}
+        <h1 className={styles.normalHeader} style={{ marginTop: "80px" }}>
+          Hikikomori
+        </h1>
+        
+        <div className={styles.heroImageContainer}>
+          <img
+            src="images/hikikomori/poster.jpg"
+            alt="Hikikomori Start"
+            className={styles.titleImage}
+          />
+        </div>
 
-        <p className={styles.quote} style={{ marginTop: "150px"}}>
-            Das Konzept des Projektes ist eine interaktive, spielbare Webseite, die auf kreative Art und Weise über das Phänomen Hikikomori informiert.  
-            Das Ziel war ein digitales Erlebnis zu erschaffen, das sowohl emotional berührt als auch faktenbasiert aufklärt.
+        <p className={styles.titleQuote}>
+          Das Konzept des Projektes ist eine interaktive, spielbare Webseite, die auf kreative Art und Weise über das Phänomen Hikikomori informiert.  
+          Das Ziel war ein digitales Erlebnis zu erschaffen, das sowohl emotional berührt als auch faktenbasiert aufklärt.
         </p>
 
-        {/* Discover */}
-        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Discover</h2>
-        <img
-          src="images/hikikomori/discover.png"
-          alt="Hikikomori Start"
-          style={{
-            width: "100%",
-            height: "100%",
-            marginTop: "50px",
-            display: "block",
-            objectPosition: "center"
-          }}
-        />
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
+        {/* Discover Section */}
+        <section className={styles.projectSection}>
+          <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "100px" }}>Discover</h2>
+          <img
+            src="images/hikikomori/discover.png"
+            alt="Discover Phase"
+            className={styles.fullWidthImage}
+          />
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
             Das Abschlussprojekt des Kurses Generative Gestaltung und KI im Design war eine Datenvisualisierung zu einem globalen Thema. Optional konnte KI für die Generierung der Visualisierungen verwendet werden.
             Das Projekt hatte eine Zeitspanne von 6 Wochen und wurde in Gruppen von 2-3 Personen durchgeführt. Die Gruppe Hikikomori bestand aus den Mitgliedern Polina Sippl, Gloria Bichler und Rosalie Obeldobel. 
             Thematik der ersten Phase war "Discover". In dieser Phase sollte man sich einen allgemeinen Überblick über mögliche Themen verschaffen. Die möglichen Themen wurden durch Brainstorming zusammengetragen, 
             technische Möglichkeiten der Visualisierung von Daten wurden recherchiert, sowie existierende Datensätze vermerkt. 
-        </p>
+          </p>
+        </section>
 
-        {/* Define */}
+        {/* Define Section */}
         <div className={styles.imageTextContainer}>
-            <img
-          src="images/hikikomori/define.png"
-          alt="Define"
-          className={styles.image}
+          <img
+            src="images/hikikomori/define.png"
+            alt="Define"
+            className={styles.image}
           />
-          <div className={styles.textContent}>
-            <h1 className={styles.normalHeader}>
-              Define
-            </h1>
-            <p className={styles.mediumText} style={{ marginTop: "20px"}}>
+          <div className={styles.textContent} style={{ padding: 0, alignItems: "flex-start" }}>
+            <h2 className={styles.normalHeader} style={{ margin: 0 }}>Define</h2>
+            <p className={styles.mediumText}>
               Aus allen Themenfeldern, die beim brainstorming zusammengetragen wurden, wurde die Auswahl zuerst auf drei Themen reduziert. Diese Themen waren "Mental Health & Death", "Mental Health & Economy" und 
               "Mental Health & Social Media". Die Entscheidung viel auf das Thema "Mental Health & Social Media", da es heutzutage viele Menschen betrifft. Durch das Projekt konnte auf dieses Problem aufmerksam gemacht werden. 
             </p>
           </div>
         </div>
         
-        {/* Develop */}
-        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Develop</h2>
-        <img
-          src="images/hikikomori/develop.png"
-          alt="Hikikomori Develop"
-          style={{
-            width: "100%",
-            height: "100%",
-            marginTop: "50px",
-            display: "block",
-            objectPosition: "center"
-          }}
-        />
-        <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "20px" }}>
+        {/* Develop Section */}
+        <section className={styles.projectSection}>
+          <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Develop</h2>
+          <img
+            src="images/hikikomori/develop.png"
+            alt="Hikikomori Develop"
+            className={styles.fullWidthImage}
+          />
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
             Das Themenfeld "Mental Health & Social Media" war sehr großflächig. Durch ein ausführliches Brainstorming konnten mögliche Unterthemen herausgefunden und nach Umsetzbarkeit bewertet werden.
             Zur gleichen Zeit recherchierte man mögliche Visualisierungen der Daten und berwertete diese nach technischer Umsetzung. Zum Schluss hat man sich auf drei Unterthemen geeignigt. Jedes Gruppenmitglied 
             wählte eins der drei Themen und entwickelte einen detailierten Umsetzungsplan. Nach gegenseitigen Präsentationen der Umsetzungspläne entschied man sich für das Thema Hikikomori. Dieses Thema konnte im zeitlichem Rahmen des
             Kurses umgesetzt werden und bot eine große Menge an Daten für die Visualisierung. 
-        </p>
+          </p>
+        </section>
 
-        {/* Result */}
-        <h2 className={styles.normalHeader} style={{ textAlign: 'center', marginTop: "150px"}}>Deliver</h2>
-        <VideoOnScroll src="/videos/hikikomori_website.mp4" />
+        {/* Deliver Section (Video) */}
+        <section className={styles.projectSection} style={{ marginBottom: "-150px" }}>
+          <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Deliver</h2>
+          <VideoOnScroll src="/videos/hikikomori_website.mp4" />
+        </section>
 
-        <div className={styles.imageTextContainer} style={{ marginBottom: "150px", marginTop: "20px" }}>
+        {/* Result Detail Section */}
+        <div className={styles.imageTextContainer} style={{ gap: "0.1rem", marginBottom: "150px" }}>
           <img
             src="images/hikikomori/familienfoto.png"
-            alt="Famillienfoto"
+            alt="Familienfoto"
             className={styles.image}
-            style={{
-              width: "300px"
-            }}
+            style={{ maxWidth: "400px" }} // Spezifische Breite für dieses kleinere Foto
           />
-          <div className={styles.textContent}>
-            <h1 className={styles.smallHeader}>
-              Hikikomori - Die Idee hinter dem Spiel
-            </h1>
+          <div className={styles.textContent} style={{ alignItems: "flex-start" }}>
+            <h3 className={styles.smallHeader} style={{ margin: 0 }}>Hikikomori - Die Idee hinter dem Spiel</h3>
             <p className={styles.mediumText}>
               Die Entscheidung fiel auf ein Point-and-Click Adventure Spiel, da dieses Genre am Besten das Konzept kommunizieren kann.
               <br /><br />
@@ -119,31 +104,27 @@ export default function ProjectDetailPage() {
           </div>
         </div>
 
-        <p className={styles.normalHeader} style={{ marginTop: "150px"}}>
-          Neugierig geworden?<br />
-          hier geht es zum
-        </p>
-        <p className={styles.monoHeader}>
-          GitHub Repository:
-        </p>
-        <a
-          href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"
-          aria-label="Hangsman github repo" 
-          className={styles.socialLink}
-        > 
-          <img 
-            src="/icons/hikikomori.png"
-            alt="QR-Code"
-              style={{
-                width: "50%",
-                height: "50%",
-                marginLeft: "500px",
-                marginTop: "100px",
-                marginBottom: "300px",
-              }}
-          />
-        </a>
-
+        {/* Link / GitHub Section */}
+        <section className={styles.footerCTA}>
+          <p className={styles.normalHeader}>
+            Neugierig geworden?<br />
+            hier geht es zum
+          </p>
+          <p className={styles.monoHeader} style={{ fontWeight: "500"}}>GitHub Repository:</p>
+          <a
+            href="https://github.com/PolinaSippel/Hikikomori-s-Life?tab=readme-ov-file"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.projectLinkWrapper}
+          > 
+            <img 
+              src="/icons/hikikomori.png"
+              alt="GitHub Link"
+              className={styles.projectLinkIcon}
+              style={{ width: "400px" }}
+            />
+          </a>
+        </section>
       </main>
     </div>
   );

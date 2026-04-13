@@ -1,5 +1,4 @@
 // Author: Rosalie Obeldobel
-
 import styles from '@/app/page.module.css';
 import MenuLeft from "@/components/menuleft";
 import MenuRight from "@/components/menuright";
@@ -8,7 +7,7 @@ import ProjectCard from "@/components/projectcard";
 export default function ProjectsPage() {
   const projects = [
     { title: "MOIA", imageUrl: "/graphics/column_moia.png" },
-    { title: "Hikikomori" , imageUrl: "/graphics/column_hikikomori.png" },
+    { title: "Hikikomori", imageUrl: "/graphics/column_hikikomori.png" },
     { title: "HANGMAN", imageUrl: "/graphics/column_hangman.png" },
     { title: "RES", imageUrl: "/graphics/column_res.png" },
     { title: "MingaTrends", imageUrl: "/graphics/column_mingatrends.png" },
@@ -16,19 +15,19 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div className={styles.projectContainer}>
-      {/* Left Sidebar */}
+    <div className={styles.pageWrapper}>
       <MenuLeft />
-
-      {/* Right Sidebar */}
       <MenuRight />
 
-      {/* Project Grid */}
       <main className={styles.mainContent}>
-        <div className={styles.projectGrid}>
-          {projects.map((p) => (
-            <ProjectCard key={p.title} title={p.title} imageUrl={p.imageUrl} />
-           ))}
+        <div className={styles.gridWrapper}>
+
+          <div className={styles.projectGrid}>
+            {projects.map((p) => (
+              <ProjectCard key={p.title} title={p.title} imageUrl={p.imageUrl} />
+            ))}
+          </div>
+          
         </div>
       </main>
     </div>

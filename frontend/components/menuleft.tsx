@@ -1,17 +1,20 @@
 // Author: Rosalie Obeldobel
-
 import styles from '@/app/page.module.css';
 import Link from "next/link";
 
 export default function MenuLeft() {
     return (
         <nav className={styles.navbarLeft}>
+          {/* Oberer Teil: Navigation */}
           <ul className={styles.menuList}>
-            <li className={styles.menuItem}><Link href="/">Portfolio</Link></li>
+            <li className={styles.menuItem}>
+              <Link href="/">Portfolio</Link>
+            </li>
           </ul>
 
+          {/* Unterer Teil: Social Links */}
           <ul className={styles.socialLinks}>
-            <li>
+             <li>
                 <a
                   href="https://gitlab.lrz.de/000000003B9C4DD8"
                   aria-label="GitLab" 
@@ -23,6 +26,8 @@ export default function MenuLeft() {
                     className={styles.socialIcon}
                   />
                 </a>
+            </li>
+            <li>
                 <a
                   href="https://github.com/rosalieobeldobel"
                   aria-label="GitHub" 

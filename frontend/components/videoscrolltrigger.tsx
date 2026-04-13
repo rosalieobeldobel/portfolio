@@ -1,6 +1,8 @@
+// Author: Rosalie Obeldobel
 "use client";
 
 import { useEffect, useRef } from "react";
+import styles from '@/app/page.module.css';
 
 interface VideoOnScrollProps {
   src: string;
@@ -17,7 +19,7 @@ export default function VideoOnScroll({ src }: VideoOnScrollProps) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            video.play();
+            video.play().catch(err => console.log("Autoplay blocked:", err));
           } else {
             video.pause();
           }
@@ -27,22 +29,19 @@ export default function VideoOnScroll({ src }: VideoOnScrollProps) {
     );
 
     observer.observe(video);
-
     return () => observer.disconnect();
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      src={src}
-      muted
-      loop
-      playsInline
-      style={{
-        width: "100%",
-        marginTop: "50px",
-        display: "block",
-      }}
-    />
+    <div className={styles.videoContainer}>
+      <video
+        ref={videoRef}
+        src={src}
+        muted
+        loop
+        playsInline
+        className={styles.scrollVideo}
+      />
+    </div>
   );
 }

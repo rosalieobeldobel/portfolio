@@ -5,6 +5,7 @@
 .pageWrapper {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .mainContent {
@@ -38,8 +39,8 @@
 }
 
 .navbarRight {
-  right: 0; /* Das zwingt die Sidebar an den rechten Rand */
-  left: auto; /* Sicherstellen, dass sie nicht links fixiert ist */
+  right: 0; 
+  left: auto; 
   background-color: rgb(255, 246, 247);
   padding: 40px 20px;
   position: fixed;
@@ -53,13 +54,29 @@
   z-index: 10;
 }
 
+.burgerBtn {
+  display: none;
+  position: fixed;
+  top: 25px;
+  z-index: 110;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.btnLeft { left: 20px; }
+.btnRight { right: 20px; }
+
 .socialLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
   padding: 0;
-  gap: 1.5rem; /* Der Abstand zwischen den Icons */
+  gap: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -81,7 +98,7 @@
 .menuList {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Zentriert die Links in der Sidebar */
+  align-items: center; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -96,7 +113,6 @@
   transition: opacity 0.2s ease;
 }
 
-/* WICHTIG: Damit die Links keine hässliche Unterstreichung haben */
 .menuItem a {
   text-decoration: none;
   color: inherit;
@@ -111,11 +127,10 @@
    2. TEXT TYPES (Typography)
    ========================================== */
 
-/* Gemeinsame Basis für Header */
 .normalHeader, .designHeader, .monoHeader, .smallHeader {
   color: black;
   font-weight: 300;
-  margin: 0; /* Verhindert unerwartete Abstände */
+  margin: 0; 
 }
 
 .normalHeader {
@@ -159,7 +174,7 @@
 .quote {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
-  margin-top: 400px; /* Reduziert von 400px für bessere Usability */
+  margin-top: 400px; 
   text-align: center;
   max-width: 800px;
 }
@@ -167,7 +182,7 @@
 .titleQuote {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
-  margin-top: 50px; /* Reduziert von 400px für bessere Usability */
+  margin-top: 50px; 
   text-align: center;
   max-width: 800px;
 }
@@ -243,7 +258,6 @@
   gap: 4rem;
   width: 100%;
   max-width: 1000px;
-  /* Der exakt gleiche Abstand wie oben */
   margin: 120px auto 120px auto; 
   padding: 0; 
   box-sizing: border-box;
@@ -259,7 +273,7 @@
 }
 
 .image {
-  width: 100%; /* Flexibler als 500px */
+  width: 100%; 
   max-width: 600px;
   height: auto;
   object-fit: cover;
@@ -277,13 +291,11 @@
 .projectGrid {
   display: grid;
   grid-auto-flow: column;
-  /* Jede Spalte ist so breit wie der Container (100px) */
   grid-auto-columns: 100px; 
   justify-content: center;
   align-items: center;
-  /* Die Höhe orientiert sich an deinen 1800px Proportionen, aber skaliert runter */
   height: 600px; 
-  gap: 40px; /* Ein kleiner Spalt sieht bei Opacity-Hover oft besser aus */
+  gap: 40px;
   padding-top: 50px;
 }
 
@@ -293,35 +305,32 @@
 
 .projectCardImageContainer {
   position: relative;
-  width: 100px; /* Breite der Karte */
-  height: 600px; /* Höhe der Karte */
+  width: 100px; 
+  height: 600px;
   overflow: hidden;
-  transition: opacity 0.4s ease; /* Transition für Opacity */
+  transition: opacity 0.4s ease; 
 }
 
 .projectCardImage {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Füllt den Container perfekt aus */
+  object-fit: cover; 
   display: block;
 }
 
-/* HOVER: Nur Opacity ändern, keine Breitenänderung mehr */
 .projectCardImageContainer:hover {
-  opacity: 0.7; /* Wird leicht transparent */
+  opacity: 0.7; 
   cursor: pointer;
 }
 
-/* Container für das große Startbild */
 .heroImageContainer {
   width: 100%;
   max-width: 1100px;
-  margin: 50px auto 120px auto; /* Auch hier 120px nach unten */
+  margin: 50px auto 120px auto; 
   display: flex;
   justify-content: center;
 }
 
-/* Bild für Discover (volle Breite) */
 .fullWidthImage {
   width: 100%;
   height: auto;
@@ -329,7 +338,6 @@
   object-fit: contain;
 }
 
-/* Sektions-Abstände */
 .projectSection {
   width: 100%;
   max-width: 1000px;
@@ -339,7 +347,6 @@
   align-items: center;
 }
 
-/* Der GitHub Link Bereich am Ende */
 .projectLinkWrapper {
   display: inline-block;
   margin: 50px 0 200px 0;
@@ -351,25 +358,24 @@
 }
 
 .projectLinkIcon {
-  width: 150px; /* Angemessene Größe für das Icon */
+  width: 150px; 
   height: auto;
   display: block;
 }
 
-/* Footer CTA Zentrierung */
 .footerCTA {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
-  /* Hier kein margin-bottom nötig, da es das Ende ist */
   margin-top: 0;
 }
 
 /* ==========================================
    HOMEPAGE SPEZIFISCH 
    ========================================== */
+
 .heroContainer {
   position: relative;
   width: 100%;
@@ -409,7 +415,7 @@
 
 .heroImageContainer {
   width: 100%;
-  max-width: 1100px; /* Zentriert und begrenzt die Breite des Startbildes */
+  max-width: 1100px;
   margin: 50px auto;
   display: flex;
   justify-content: center;
@@ -417,7 +423,7 @@
 
 .projectSection {
   width: 100%;
-  max-width: 1000px; /* Text und Inhalt bleiben in einer gut lesbaren Breite */
+  max-width: 1000px; 
   margin: 120px auto; 
   display: flex;
   flex-direction: column;
@@ -428,7 +434,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px; /* Optional: passt zu deinem sauberen Design */
+  border-radius: 4px; 
   margin: 40px 0;
 }
 
@@ -445,11 +451,11 @@
 }
 
 .projectLinkWrapper:hover {
-  transform: translateY(-8px); /* Kleiner Hover-Effekt für Interaktivität */
+  transform: translateY(-8px);
 }
 
 .projectLinkIcon {
-  width: 150px; /* Damit das GitHub/Icon-Bild nicht den Bildschirm sprengt */
+  width: 150px;
   height: auto;
 }
 
@@ -486,10 +492,10 @@
 
 .skillItem {
   display: flex;
-  justify-content: space-between; /* Name links, Punkte rechts */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
-  max-width: 400px; /* Damit die Zeile nicht zu lang wird */
+  max-width: 400px; 
   margin-bottom: 1rem;
 }
 
@@ -501,7 +507,7 @@
 
 .scale {
   display: flex;
-  gap: 8px; /* Abstand zwischen den Punkten */
+  gap: 8px; 
 }
 
 .scaleDot, .scaleDotActive {
@@ -512,14 +518,13 @@
 }
 
 .scaleDot {
-  background-color: #ddd; /* Inaktiver Punkt (Grau) */
+  background-color: #ddd; 
 }
 
 .scaleDotActive {
-  background-color: black; /* Aktiver Punkt (Schwarz) */
+  background-color: black; 
 }
 
-/* Falls du die Skills in zwei Spalten anzeigen willst */
 .skillsLayout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -531,8 +536,8 @@
 
 .skillsSection {
   width: 100%;
-  max-width: 600px; /* Begrenzt die Breite der Liste für bessere Lesbarkeit */
-  margin: 50px auto; /* Zentriert die Sektion und gibt Abstand nach oben/unten */
+  max-width: 600px;
+  margin: 50px auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,7 +546,7 @@
 .skillsList {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Abstand zwischen den einzelnen Skill-Zeilen */
+  gap: 0.5rem; 
   width: 100%;
 }
 
@@ -551,8 +556,8 @@
 
 .videoContainer {
   width: 100%;
-  max-width: 1000px; /* Begrenzt die Breite auf Desktop */
-  margin: 80px auto; /* Zentriert das Video mit Abstand oben/unten */
+  max-width: 1000px;
+  margin: 80px auto;
   display: flex;
   justify-content: center;
 }
@@ -561,8 +566,8 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px; /* Optional: Ein kleiner Abrundungseffekt sieht modern aus */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Dezenter Schatten */
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
 }
 
 /* ==========================================
@@ -572,7 +577,7 @@
 .sliderContainer {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; /* Gleicher Abstand wie deine anderen Sektionen */
+  margin: 120 auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,7 +590,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; /* Oder eine ganz leichte Nuance von deinem Off-White */
+  background-color: transparent; 
   overflow: hidden;
 }
 
@@ -620,7 +625,7 @@
 .sliderButton:hover {
   background-color: black;
   color: white;
-  opacity: 1; /* Überschreibt dein generelles Button-Hover-Opacity */
+  opacity: 1; 
 }
 
 /* ==========================================
@@ -628,8 +633,8 @@
    ========================================== */
 
 @media (max-width: 1024px) {
-  .navbarLeft, .navbarRight {
-    display: none; /* Sidebars auf Tablets/Handys ausblenden */
+  .burgerBtn {
+    display: block; 
   }
 
   .mainContent {
@@ -637,6 +642,25 @@
     margin-right: 0;
     width: 100%;
     padding: 20px;
+  }
+
+  .navbarLeft, .navbarRight {
+    width: 100%;
+    transform: translateX(-100%);
+  }
+
+  .navbarRight {
+    transform: translateX(100%); 
+  }
+
+  .navbarLeft .socialLinks {
+    flex-direction: row;
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
+
+  .menuOpen {
+    transform: translateX(0) !important;
   }
 
   .textContent, .imageTextContainer {
@@ -644,27 +668,24 @@
   }
 
   .imageTextContainer {
-    flex-direction: column; /* Bild und Text untereinander */
+    flex-direction: column;
+    text-align: center;
     gap: 2rem;
   }
 
+  .textContent {
+    align-items: center !important; 
+  }
+
   .normalHeader, .designHeader, .monoHeader {
-    font-size: 32px; /* Kleinere Header für kleine Bildschirme */
+    font-size: 32px;
   }
 
   .skillsLayout {
-    grid-template-columns: 1fr; /* Skills untereinander */
+    grid-template-columns: 1fr; 
     margin-top: 80px;
   }
 
-  .mainContent {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    padding: 20px;
-  }
-
-  /* HIER ERGÄNZEN: Homepage Handy-Anpassung */
   .heroContainer {
     align-items: center;
     margin-top: 20px;
@@ -677,68 +698,56 @@
   }
 
   .heroText {
-    position: static; /* Wichtig: Hebt das Overlay auf Handy auf */
+    position: static; 
     width: 100%;
     padding: 40px 0;
     left: 0;
-    text-align: center; /* Optional: Text zentrieren auf Handy */
+    text-align: center;
   }
 
-  .navbarLeft, 
-  .navbarRight {
-    display: none !important; 
-  }
-
-  /* Main Content nimmt jetzt den vollen Platz ein */
-  .mainContent {
-    margin-left: 0;
-    margin-right: 0;
+  .gridWrapper {
+    padding-top: 50px;
+    padding-bottom: 60px;
     width: 100%;
-    padding: 20px;
   }
 
   .projectGrid {
-    /* Auf Mobile schalten wir von Spalten auf Zeilen um */
     grid-auto-flow: row; 
-    grid-template-columns: 1fr; /* Volle Breite */
-    grid-auto-columns: auto;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+    height: auto;
     gap: 10px;
     width: 100%;
+    max-width: 200px;
     padding: 10px;
   }
 
   .projectCardImageContainer {
+    width: 100% !important; 
+    height: 100% !important; 
     position: relative;
-    /* HIER: Die Breite der geschlossenen Karte (Standard: 150px) */
-    width: 200px; 
-    /* HIER: Die Höhe der Karte (Standard: 600px) */
-    height: 500px; 
     overflow: hidden;
-    transition: width 0.4s ease;
   }
   
   .projectCardImage {
-    /* HIER: WICHTIG! Die Breite des Bildes sollte mindestens so groß sein, 
-       wie die Karte im AUSGEFAHRENEN Zustand sein soll. */
-    width: 200px; 
-    height: 500px; /* Muss die gleiche Höhe wie der Container haben */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
   }
   
-  /* Hover-Zustand */
   .projectCardImageContainer:hover {
-    /* HIER: Wie weit soll die Karte beim Hovern ausfahren? */
     width: 200px; 
   }
 
   .skillsLayout {
-    grid-template-columns: 1fr; /* Auf Handys untereinander */
+    grid-template-columns: 1fr; 
     gap: 2rem;
   }
   
   .skillItem {
-    max-width: 100%; /* Volle Breite nutzen */
+    max-width: 100%;
   }
 
   .skillsSection {
@@ -758,7 +767,6 @@
     height: 200px;
   }
 
-  /* Verhindert zu große Abstände auf kleinen Bildschirmen */
   .resumeSection {
     margin-bottom: 100px;
   }
@@ -778,11 +786,11 @@
   }
 
   .projectLinkIcon {
-    width: 100px; /* Kleineres Icon auf Mobile */
+    width: 100px; 
   }
 
   .sliderContainer {
-    margin: 60px auto; /* Kleinerer Abstand auf Handys */
+    margin: 60px auto; 
     padding: 0 10px;
   }
 

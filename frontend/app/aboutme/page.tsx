@@ -50,7 +50,7 @@ export default function AboutMePage() {
           Meine Projekte entstehen aus einem tiefen Verständnis für Nutzerbedürfnisse und technische Möglichkeiten.
         </p>
 
-        <div className={styles.skillsLayout}>
+        <div className={styles.skillsLayout} style={{ marginTop: "400px" }}>
           <div className={styles.skillsColumn}>
             <SkillsSectionDesign />
           </div>

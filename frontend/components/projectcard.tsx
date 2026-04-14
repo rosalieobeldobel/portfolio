@@ -18,10 +18,6 @@ export default function ProjectCard({ title, imageUrl }: ProjectCardProps) {
             alt={title} 
             className={styles.projectCardImage} 
           />
-          {/* Optional: Ein Overlay mit dem Titel, der beim Hover erscheint */}
-          <div className={styles.projectCardOverlay}>
-             <span className={styles.smallHeader}>{title}</span>
-          </div>
         </div>
       </Link>
     </div>

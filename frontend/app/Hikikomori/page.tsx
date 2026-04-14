@@ -37,7 +37,7 @@ export default function ProjectDetailPage() {
             alt="Discover Phase"
             className={styles.fullWidthImage}
           />
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
             Das Abschlussprojekt des Kurses Generative Gestaltung und KI im Design war eine Datenvisualisierung zu einem globalen Thema. Optional konnte KI für die Generierung der Visualisierungen verwendet werden.
             Das Projekt hatte eine Zeitspanne von 6 Wochen und wurde in Gruppen von 2-3 Personen durchgeführt. Die Gruppe Hikikomori bestand aus den Mitgliedern Polina Sippl, Gloria Bichler und Rosalie Obeldobel. 
             Thematik der ersten Phase war "Discover". In dieser Phase sollte man sich einen allgemeinen Überblick über mögliche Themen verschaffen. Die möglichen Themen wurden durch Brainstorming zusammengetragen, 
@@ -69,7 +69,7 @@ export default function ProjectDetailPage() {
             alt="Hikikomori Develop"
             className={styles.fullWidthImage}
           />
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
             Das Themenfeld "Mental Health & Social Media" war sehr großflächig. Durch ein ausführliches Brainstorming konnten mögliche Unterthemen herausgefunden und nach Umsetzbarkeit bewertet werden.
             Zur gleichen Zeit recherchierte man mögliche Visualisierungen der Daten und berwertete diese nach technischer Umsetzung. Zum Schluss hat man sich auf drei Unterthemen geeignigt. Jedes Gruppenmitglied 
             wählte eins der drei Themen und entwickelte einen detailierten Umsetzungsplan. Nach gegenseitigen Präsentationen der Umsetzungspläne entschied man sich für das Thema Hikikomori. Dieses Thema konnte im zeitlichem Rahmen des

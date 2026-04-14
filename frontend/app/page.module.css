@@ -566,6 +566,64 @@
 }
 
 /* ==========================================
+   SLIDER COMPONENTS
+   ========================================== */
+
+.sliderContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* Gleicher Abstand wie deine anderen Sektionen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sliderFrame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Oder eine ganz leichte Nuance von deinem Off-White */
+  overflow: hidden;
+}
+
+.sliderControls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+.sliderCounter {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: black;
+  min-width: 60px;
+  text-align: center;
+}
+
+.sliderButton {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderButton:hover {
+  background-color: black;
+  color: white;
+  opacity: 1; /* Überschreibt dein generelles Button-Hover-Opacity */
+}
+
+/* ==========================================
    5. RESPONSIVE DESIGN (Handy & Tablet)
    ========================================== */
 
@@ -721,5 +779,26 @@
 
   .projectLinkIcon {
     width: 100px; /* Kleineres Icon auf Mobile */
+  }
+
+  .sliderContainer {
+    margin: 60px auto; /* Kleinerer Abstand auf Handys */
+    padding: 0 10px;
+  }
+
+  .sliderFrame img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .sliderControls {
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sliderButton {
+    padding: 8px 15px;
+    font-size: 18px;
   }
 }

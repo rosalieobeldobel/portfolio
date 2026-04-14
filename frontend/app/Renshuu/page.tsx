@@ -55,10 +55,11 @@ export default function ProjectDetailPage() {
               src="images/renshuu/Wireframes.png"
               alt="Wireframes"
               className={styles.image}
+              style={{ maxWidth: "500px" }}
             />
-            <div className={styles.textContent}>
+            <div className={styles.textContent} style={{ alignItems: "flex-start" }}>
               <h2 className={styles.normalHeader}>Wireframes</h2>
-              <p className={styles.mediumText} style={{ marginTop: "20px"}}>
+              <p className={styles.mediumText} style={{ margin : 0 }}>
                 Die Aufgabe war es nur für einen Klickpfad Wireframes zu erstellen. Die ENtscheidung viel auf das Erlernen einer Vokabel, wofür 
                 zwei verschiedene Versionen an WIreframes erstellt wurden. Die Intention bei den Wireframes war es die Menge an Informationen 
                 zu verringern, die wichtigen Informationen leichter ersichtlich zu gestalten und den Goal-Gradient Effekt anzupassen. Nach 
@@ -76,7 +77,7 @@ export default function ProjectDetailPage() {
               alt="UI Design"
               className={styles.fullWidthImage}
             />
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Als Erstes wurde die vorhandene Farbpalette analysiert, in primäre und Akzentfarben kategorisiert und die einzelnen Farben 
                 aneinander angepasst. Dadurch entstand ein besserer Kontrast zwischen Text und Hintergrund. Gleichzeitig können die Nutzer:innen durch 
                 die familiäre Einfärbung des Designs in den Farben rot oder grün intuitiver erkennen, ob ihre Antwort richtig oder falsch war. 
@@ -99,7 +100,8 @@ export default function ProjectDetailPage() {
               <div style={{ flex: "1", maxWidth: "400px" }}>
                 <VideoOnScroll src="/videos/renshuu_prototype.mp4" />
               </div>
-              <div className={styles.textContent} style={{ flex: "1.5" }}>
+              <div className={styles.textContent} style={{ flex: "1.5", alignItems: "flex-start" }}>
+                <h3 className={styles.smallHeader} style={{ margin: 0 }}>Klickpfad</h3>
                 <p className={styles.mediumText}>
                   Das finale Design wurde als ein interaktiver Figma-Prototyp umgesetzt. Bei diesem kann man durch den Klickpfad klicken und auf 
                   diese Art und Weise das neue Design erlebbar machen. 

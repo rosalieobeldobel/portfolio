@@ -44,7 +44,7 @@ export default function ProjectDetailPage() {
             className={styles.fullWidthImage}
           />
           
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
             Ausgangspunkt der Recherche war die Frage, wie künstliche Intelligenz im kreativen Kontext eingesetzt werden kann, 
             ohne den Menschen zu ersetzen. Dabei wurden Themen wie Mensch-Maschine-Interaktion, kollaborative Kunst, Computer Vision 
             und interaktive Installationen untersucht. Die Erkenntnisse bildeten die Grundlage für das konzeptionelle und technische Design 
@@ -81,7 +81,7 @@ export default function ProjectDetailPage() {
             className={styles.fullWidthImage}
           />
         
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
             Der Aufbau der Installation erfolgte größtenteils in Handarbeit. Die Wand und Plattformen wurden konstruiert, Kabel verlegt und 
             die technische Infrastruktur eingerichtet. Der Prozess war geprägt von Improvisation, Experimentieren und Teamarbeit. Auch 
             Herausforderungen und Fehler wurden als Teil des kreativen Prozesses verstanden.

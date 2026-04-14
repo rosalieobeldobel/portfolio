@@ -93,7 +93,7 @@ export default function ProjectDetailPage() {
             <div className={styles.sliderWrapper}>
               <ImageSlider images={researchImages} />
             </div>
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Die Recherche bildete den wichtigsten Teil des Projektes. Nur wenn man ein existierendes Problem findet kann man ein Design 
                 entwickeln, dass einen Mehrwert hat. Diese Phase war von dem direkten Kontakt mit den Menschen in der Innenstadt geprägt. Unternehmer:innen 
                 und Mitarbeiter:innen von kleinen oder mittelständischen Betrieben wurden interviewt. Als Gebiet wurde der Marienplatz und der anliegende 
@@ -108,7 +108,7 @@ export default function ProjectDetailPage() {
             <div className={styles.sliderWrapper}>
               <ImageSlider images={syntheseImages} />
             </div>
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Alle in der Recherche gewonnen Informationen werden in der Synthese ausgiebig analysiert. Das Ziel ist es alle herrschenden Probleme und 
                 negativen Erlebnisse herauskristallisieren. Die Informationen wurden in verschiedene Kategorien eingeteilt, welche dann übersichtlich als eine 
                 User Journey dargestellt werden konnten. Die existierenden Probleme konnten auf diese Art und Weise auf einen Blick erkannt werden.
@@ -121,7 +121,7 @@ export default function ProjectDetailPage() {
             <div className={styles.sliderWrapper}>
               <ImageSlider images={ideationImages} />
             </div>
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Für die in der vorherigen Phase entdeckten Probleme wurden nun mit Hilfe verschiedener Methoden Ideen für Lösung für diese Probleme gesammelt. 
                 Alle Ideen wurden anhand Umsetzbarkeit skaliert. Die Idee, die das schwerwiegendste Problem am Besten lösen würde und die höchste Umsetzbarkeit 
                 hatte wurde ausgewählt. Die Entscheidung viel demnach auf eine App-Anwendung, welche über Trends beim Einkaufen in der Innenstadt aufklären sollte. 
@@ -136,7 +136,7 @@ export default function ProjectDetailPage() {
             <div className={styles.sliderWrapper}>
               <ImageSlider images={prototypingImages} />
             </div>
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "50px", marginBottom: "200px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px", marginBottom: "200px" }}>
                 In diesem letzten Schritt sollte nur beispielhaft ein Figma-Prototyp der App-Anwendung erstellt werden, da die Gewichtung des Projektes auf 
                 den vorherigen Phasen lag. Die wenigen Frames zeigen den ungefähren Aufbau der App und welche Inhalte diese zeigen würde. Bei dem Design orientierte
                 man sich an Social-Media-Plattformen. Eine große Menge an Informationen sollte möglichst übersichtlich und einfach dargestellt werden. Gleichzeitig 

@@ -74,7 +74,7 @@ export default function ProjectDetailPage() {
               alt="Userflow"
               className={styles.fullWidthImage}
             />
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Die Gruppe hat aus allen Problemstellen zwei detailierter betrachtet und mögliche Lösungen mit der Meta Quest 3 erarbeitet. Eine 
                 Präsentation vor Angestellten der Berufsfeuerwehr München lieferte umfangreiches Feedback und führte zu der Entscheidung eine MR-Anwendung 
                 für Erstsichtungen zu entwickeln. Ein genauer Ablauf mit allen Funktionen der MR-Anwendung wurde definiert und bildete den Orientrierungsrahmmen 
@@ -88,7 +88,7 @@ export default function ProjectDetailPage() {
             <div className={styles.sliderWrapper}>
               <ImageSlider images={developImages} />
             </div>
-            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+            <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Zuerst wurde das Konzept hinter der Anwendung definiert. Die MR-Anwendung soll eine Übersicht über die Einsatzstelle bieten, Informationen bzw. 
                 Daten über Patienten verwalten, die Kommunikation zwischen den einzelnen Instanzen koordinieren und Einsatzkräften gewährleisten, dass sie 
                 zu jeder Zeit ihre Hände frei zur Verfügung haben. Es sollte pro Gruppenmitglied eine Funktion entwickelt werden. Diese Funktionen umfassten die 
@@ -98,13 +98,13 @@ export default function ProjectDetailPage() {
           </section>
 
           {/* Deliver Section */}
-          <div className={styles.imageTextContainer} style={{ marginTop: "100px" }}>
-            <div style={{ flex: "1", maxWidth: "400px" }}>
-              <VideoOnScroll src="/videos/res_aufnahme.mp4" />
-            </div>
-            <div className={styles.textContent} style={{ flex: "1.5" }}>
+          <div className={styles.imageTextContainer} style={{ marginTop: "100px", alignItems: "center" }}>
+              <div style={{ flex: "1", maxWidth: "400px" }}>
+                <VideoOnScroll src="/videos/res_aufnahme.mp4" />
+              </div>
+              <div className={styles.textContent} style={{ flex: "1", alignItems: "flex-start", justifyContent: "center" }}>
               <h2 className={styles.normalHeader}>Deliver</h2>
-              <p className={styles.mediumText} style={{ marginTop: "20px" }}>
+              <p className={styles.mediumText} style={{ margin: 0 }}>
                 Die fertige MR-Anwendung wurde auf der Feuerwache 6 präsentiert und ausgestellt. Während die Beuscher:innen RES mit Hilfe der Meta Quest 3 
                 ausprobieren konnten, haben wir diese einen quantitativen Umfragebogen ausfüllen lassen. Auf diese Art und Weise erhielten wir eine 
                 große Menge an Feedback-Material, die wir unserer Usability-Testing-Auswertung hinzufügen konnten. 

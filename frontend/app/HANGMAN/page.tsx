@@ -37,7 +37,7 @@ export default function ProjectDetailPage() {
             alt="Define"
             className={styles.fullWidthImage}
           />
-          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
+          <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
             Zu Beginn wurde der Kommunikationsfluss der Website definiert. Dafür wurden zunächst alle benötigten Seiten identifiziert 
             sowie die erforderlichen Schnittstellen und Funktionen für die Umsetzung festgelegt. Das UI-Design wurde anschließend 
             in Figma konzipiert und diente während der Entwicklung als visuelle Orientierung, wodurch der Implementierungsprozess 

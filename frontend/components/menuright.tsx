@@ -1,4 +1,4 @@
-"use client"; // Wichtig für den State!
+"use client"; 
 
 import { useState } from "react";
 import styles from '@/app/page.module.css';

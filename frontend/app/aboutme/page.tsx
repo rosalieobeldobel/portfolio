@@ -22,12 +22,12 @@ export default function AboutMePage() {
           <div className={styles.textContent}>
             <h1 className={styles.designHeader}>Über Mich</h1>
             <p className={styles.mediumText}>
-              Ich bin Designerin mit einem starken Fokus auf barrierefreie, funktionale und nutzerzentrierte Gestaltung.
-              Meine Arbeitsweise ist strukturiert, detailorientiert und problemorientiert, sodass ich existierende Probleme finde
-              und Lösungen schrittweise entwickel. Ich kombiniere ästhetisches Gespür mit einem tiefen
-              Verständnis für Usability und Barrierefreiheit, um Interfaces, Produkte und visuelle Kommunikation zu entwickeln,
+              Ich bin Designerin mit einem starken Fokus auf barrierefreier, funktionaler und nutzerzentrierter Gestaltung.
+              Meine Arbeitsweise ist strukturiert, detailorientiert sowie auch problemorientiert, sodass ich existierende Probleme finde
+              und Lösungen schrittweise entwickeln kann. Ich kombiniere ästhetisches Gespür mit einem tiefen
+              Verständnis für Usability und Barrierefreiheit. Mit meinen Fähigkeiten möchte ich Interfaces, Produkte und visuelle Kommunikation entwickeln,
               die Menschen begeistern und ihnen den Umgang erleichtern. Innovation, Kreativität und Teamfähigkeit treiben
-              meine Arbeit an, und ich lege großen Wert darauf, Designlösungen zu schaffen, die sowohl schön als auch funktional sind.
+              meine Arbeit an. Bei dieser Arbeit lege ich großen Wert darauf, Designlösungen zu schaffen, die sowohl schön als auch funktional sind.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function AboutMePage() {
               in Programmiersprachen, Datenbanken und Webtechnologien mit einem verständnisvollen Blick für Nutzerbedürfnisse und
               zugängliches, inklusives Design. Es motiviert mich, digitale Lösungen zu schaffen, die Menschen helfen,
               Prozesse vereinfachen und Barrieren abbauen. Kreativität, Präzision und Teamfähigkeit sind für mich die Grundlage
-              erfolgreicher Projekte, und ich strebe stets danach, innovative und nachhaltige Ergebnisse zu liefern.
+              erfolgreicher Projekte. Während eines Projektes strebe ich stets danach, innovative und nachhaltige Ergebnisse zu liefern.
             </p>
           </div>
         </div>

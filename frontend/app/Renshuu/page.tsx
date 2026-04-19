@@ -35,10 +35,10 @@ export default function ProjectDetailPage() {
           <section className={styles.projectSection}>
             <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Analyse</h2>
             <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
-                Zu Beginn wurde die Homepage der Website und das Erlernen einer Vokabel anhand der UX-Regeln analysiert. 
+                Zu Beginn wurde die Homepage der Webseite und das Erlernen einer Vokabel anhand der UX-Regeln analysiert. 
                 Negatives wurde mit rot markiert und Positives mit grün. Dabei war es vor allem wichtig, die positiven Aspekte 
-                und den allgemeinen Charakter der Website später beizubehalten. Zusätzlich fand die Analyse von einer vergleichbaren Website 
-                names “Hey Japan” statt. Dadurch konnte herausgefunden werden welches Design Nutzer:innen von digitalen Lernplattformen gewohnt sind
+                und den allgemeinen Charakter der Website später beizubehalten. Zusätzlich fand die Analyse von einer vergleichbaren Webseite 
+                namens “Hey Japan” statt. Dadurch konnte herausgefunden werden welches Design Nutzer:innen von digitalen Lernplattformen gewohnt sind
                 und welche Erwartungen diese an Renshuu hätten.
             </p>
             <img
@@ -60,10 +60,10 @@ export default function ProjectDetailPage() {
             <div className={styles.textContent} style={{ alignItems: "flex-start" }}>
               <h2 className={styles.normalHeader}>Wireframes</h2>
               <p className={styles.mediumText} style={{ margin : 0 }}>
-                Die Aufgabe war es nur für einen Klickpfad Wireframes zu erstellen. Die ENtscheidung viel auf das Erlernen einer Vokabel, wofür 
-                zwei verschiedene Versionen an WIreframes erstellt wurden. Die Intention bei den Wireframes war es die Menge an Informationen 
+                Die Aufgabe war es nur für einen Klickpfad Wireframes zu erstellen. Die Entscheidung viel auf das Erlernen einer Vokabel, wofür 
+                zwei verschiedene Versionen an Wireframes erstellt wurden. Die Intention bei den Wireframes war es die Menge an Informationen 
                 zu verringern, die wichtigen Informationen leichter ersichtlich zu gestalten und den Goal-Gradient Effekt anzupassen. Nach 
-                Einholen von Feedbacks von Nutzer:innen wurden die positiven Aspekte von beiden Versioen extrahiert und in einer
+                Einholen von Feedback von Nutzer:innen wurden die positiven Aspekte von beiden Versioen extrahiert und in einer
                 finalen Version kombiniert.
               </p>
             </div>
@@ -81,8 +81,8 @@ export default function ProjectDetailPage() {
                 Als Erstes wurde die vorhandene Farbpalette analysiert, in primäre und Akzentfarben kategorisiert und die einzelnen Farben 
                 aneinander angepasst. Dadurch entstand ein besserer Kontrast zwischen Text und Hintergrund. Gleichzeitig können die Nutzer:innen durch 
                 die familiäre Einfärbung des Designs in den Farben rot oder grün intuitiver erkennen, ob ihre Antwort richtig oder falsch war. 
-                Für die Typografie verwendete man für Einheitlichkeit ausschließlich Roboto. Ein großer Vorteil dieser Schriftart ist es, dass sie 
-                sowohl auf Englisch und Deutsch, als auch auf Japanisch eine gute Lesbarkeit gewährleistet. Der Charakter der Website wurde 
+                Für die Typografie verwendete man für die Einheitlichkeit ausschließlich Roboto. Ein großer Vorteil dieser Schriftart ist es, dass sie 
+                sowohl auf Englisch und Deutsch, als auch auf Japanisch eine gute Lesbarkeit gewährleistet. Der Charakter der Webseite wurde 
                 verstärkt hervorgebracht durch die Verwendung des Logos in Form von Illustrationen.
             </p>
           </section>

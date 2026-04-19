@@ -53,10 +53,9 @@ export default function ProjectDetailPage() {
           <section className={styles.projectSection}>
             <h2 className={styles.normalHeader} style={{ textAlign: 'center' }}>Discover</h2>
             <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "40px" }}>
-                Das Projekt wurde in einer Gruppe von vier Personen abgelegt. Zu diesen Personen zählen Aurelia ..., Ash ..., Lisa Bott und 
-                Rosalie Obeldobel. Die Recherche begann mit einem Besuch der Feuerwache 6. Dort erlangte man einen Einblick in jede Abteilung der 
-                Feuerwache und konnte erste Fragen klären. Des Weiteren wurde ausführliche Internetrecherche betrieben, alles auf einem FigJam-Board 
-                zusammengefasst und ausgewertet.
+                Das Projekt wurde in einer Gruppe von vier Personen abgelegt. Die Recherche begann mit einem Besuch der Feuerwache 6. Dort erlangte man 
+                einen Einblick in jede Abteilung der Feuerwache und konnte erste Fragen klären. Des Weiteren wurde ausführliche Internetrecherche betrieben, 
+                alles auf einem FigJam-Board zusammengefasst und ausgewertet.
             </p>
             <img
               src="images/res/res_research.png"
@@ -105,12 +104,12 @@ export default function ProjectDetailPage() {
               <div className={styles.textContent} style={{ flex: "1", alignItems: "flex-start", justifyContent: "center" }}>
               <h2 className={styles.normalHeader}>Deliver</h2>
               <p className={styles.mediumText} style={{ margin: 0 }}>
-                Die fertige MR-Anwendung wurde auf der Feuerwache 6 präsentiert und ausgestellt. Während die Beuscher:innen RES mit Hilfe der Meta Quest 3 
-                ausprobieren konnten, haben wir diese einen quantitativen Umfragebogen ausfüllen lassen. Auf diese Art und Weise erhielten wir eine 
-                große Menge an Feedback-Material, die wir unserer Usability-Testing-Auswertung hinzufügen konnten. 
+                Die fertige MR-Anwendung wurde auf der Feuerwache 6 präsentiert und ausgestellt. Die Besucher:innen RES konnten mit Hilfe der Meta Quest 3 RES
+                ausprobieren und im Anschluss eine quantitaive Umfrage zu ihrem Erlebnis ausfüllen. Auf diese Art und Weise erhielt man eine 
+                große Menge an Feedback-Material, die der Usability-Testing-Auswertung hinzufügt wurde. 
                 <br /><br />
                 Die Ausstellung zeigte, dass die futuristische und prototypische Anwendung ein existierendes Problem anspricht. Viele Besucher:innen der 
-                Feuerwehr hatten ein großes Interesse an unserem Lösungsansatz und dessen Weiterentwicklung in der Zukunft. 
+                Feuerwehr hatten ein großes Interesse an dem Lösungsansatz und dessen Weiterentwicklung in der Zukunft. 
               </p>
             </div>
           </div>

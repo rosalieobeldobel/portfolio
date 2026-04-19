@@ -26,7 +26,7 @@ export default function ProjectDetailPage() {
 
         <p className={styles.titleQuote}>
           Das Konzept des Projektes ist eine interaktive, spielbare Webseite, die auf kreative Art und Weise über das Phänomen Hikikomori informiert.  
-          Das Ziel war ein digitales Erlebnis zu erschaffen, das sowohl emotional berührt als auch faktenbasiert aufklärt.
+          Das Ziel war ein digitales Erlebnis zu erschaffen, das sowohl emotional berührt, als auch faktenbasiert aufklärt.
         </p>
 
         {/* Discover Section */}
@@ -38,9 +38,12 @@ export default function ProjectDetailPage() {
             className={styles.fullWidthImage}
           />
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
-            Das Abschlussprojekt des Kurses Generative Gestaltung und KI im Design war eine Datenvisualisierung zu einem globalen Thema. Optional konnte KI für die Generierung der Visualisierungen verwendet werden.
-            Das Projekt hatte eine Zeitspanne von 6 Wochen und wurde in Gruppen von 2-3 Personen durchgeführt. Die Gruppe Hikikomori bestand aus den Mitgliedern Polina Sippl, Gloria Bichler und Rosalie Obeldobel. 
-            Thematik der ersten Phase war "Discover". In dieser Phase sollte man sich einen allgemeinen Überblick über mögliche Themen verschaffen. Die möglichen Themen wurden durch Brainstorming zusammengetragen, 
+            Das Abschlussprojekt des Kurses Generative Gestaltung und KI im Design war eine Datenvisualisierung zu einem globalen Thema. 
+            Optional konnte KI für die Generierung der Visualisierungen verwendet werden.
+            Das Projekt hatte eine Zeitspanne von 6 Wochen und wurde in Gruppen von 2-3 Personen durchgeführt. Die Gruppe Hikikomori bestand 
+            aus den Mitgliedern Polina Sippl, Gloria Bichler und Rosalie Obeldobel. 
+            Thematik der ersten Phase war "Discover". In dieser Phase sollte man sich einen allgemeinen Überblick über mögliche Themen verschaffen. 
+            Die möglichen Themen wurden durch Brainstorming zusammengetragen, 
             technische Möglichkeiten der Visualisierung von Daten wurden recherchiert, sowie existierende Datensätze vermerkt. 
           </p>
         </section>
@@ -55,8 +58,10 @@ export default function ProjectDetailPage() {
           <div className={styles.textContent} style={{ padding: 0, alignItems: "flex-start" }}>
             <h2 className={styles.normalHeader} style={{ margin: 0 }}>Define</h2>
             <p className={styles.mediumText}>
-              Aus allen Themenfeldern, die beim brainstorming zusammengetragen wurden, wurde die Auswahl zuerst auf drei Themen reduziert. Diese Themen waren "Mental Health & Death", "Mental Health & Economy" und 
-              "Mental Health & Social Media". Die Entscheidung viel auf das Thema "Mental Health & Social Media", da es heutzutage viele Menschen betrifft. Durch das Projekt konnte auf dieses Problem aufmerksam gemacht werden. 
+              Aus allen Themenfeldern, die beim Brainstorming zusammengetragen wurden, wurde die Auswahl zuerst auf drei Themen reduziert. 
+              Diese Themen waren "Mental Health & Death", "Mental Health & Economy" und 
+              "Mental Health & Social Media". Die Entscheidung viel auf das Thema "Mental Health & Social Media", da es heutzutage viele Menschen 
+              betrifft. Durch das Projekt konnte zudem auf dieses Problem aufmerksam gemacht werden. 
             </p>
           </div>
         </div>
@@ -70,9 +75,12 @@ export default function ProjectDetailPage() {
             className={styles.fullWidthImage}
           />
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
-            Das Themenfeld "Mental Health & Social Media" war sehr großflächig. Durch ein ausführliches Brainstorming konnten mögliche Unterthemen herausgefunden und nach Umsetzbarkeit bewertet werden.
-            Zur gleichen Zeit recherchierte man mögliche Visualisierungen der Daten und berwertete diese nach technischer Umsetzung. Zum Schluss hat man sich auf drei Unterthemen geeignigt. Jedes Gruppenmitglied 
-            wählte eins der drei Themen und entwickelte einen detailierten Umsetzungsplan. Nach gegenseitigen Präsentationen der Umsetzungspläne entschied man sich für das Thema Hikikomori. Dieses Thema konnte im zeitlichem Rahmen des
+            Das Themenfeld "Mental Health & Social Media" war sehr großflächig. Durch ein ausführliches Brainstorming konnten mögliche Unterthemen 
+            herausgefunden und nach Umsetzbarkeit bewertet werden.
+            Zur gleichen Zeit recherchierte man mögliche Visualisierungen der Daten und berwertete diese nach technischer Umsetzung. Zum Schluss hat 
+            man sich auf drei Unterthemen geeignigt. Jedes Gruppenmitglied 
+            wählte eins der drei Themen und entwickelte einen detailierten Umsetzungsplan. Nach gegenseitigen Präsentationen der Umsetzungspläne 
+            entschied man sich für das Thema Hikikomori. Dieses Thema konnte im zeitlichem Rahmen des
             Kurses umgesetzt werden und bot eine große Menge an Daten für die Visualisierung. 
           </p>
         </section>
@@ -96,9 +104,12 @@ export default function ProjectDetailPage() {
             <p className={styles.mediumText}>
               Die Entscheidung fiel auf ein Point-and-Click Adventure Spiel, da dieses Genre am Besten das Konzept kommunizieren kann.
               <br /><br />
-              Hikikomori ist ein japanischer Begriff für Menschen, die sich über einen langen Zeitraum aus der Gesellschaft zurückziehen. Sie verlassen kaum noch ihr Zimmer und meiden soziale Kontakte. Daher entschied man sich für den Spielcharakter 
-              Kenshin Ozawa, 37 Jahre alt. Sein bereits verstorbener Vater war gewälttätig ihm gegenüber. Deswegen lebt er nur noch mit seiner Mutter zusammen, welche jdeoch krank ist. Zu seinem jüngeren Bruder hat er keinen Kotakt mehr, da dieser Kenshin hasst.
-              Kenshin selbst leidet an Depressionen, eine Angststörungen, ADHS und PTBS. Alle psychologischen Erkrankungen wurden ausgiebig recherchiert, um diese nicht fehlerhaft darzustellen. Durch die Website soll man in die Emotionen und das Leben von 
+              Hikikomori ist ein japanischer Begriff für Menschen, die sich über einen langen Zeitraum aus der Gesellschaft zurückziehen. Sie 
+              verlassen kaum noch ihr Zimmer und meiden soziale Kontakte. Daher entschied man sich für den Spielcharakter 
+              Kenshin Ozawa, 37 Jahre alt. Sein bereits verstorbener Vater war gewälttätig ihm gegenüber. Deswegen lebt er nur noch mit seiner 
+              Mutter zusammen, welche jdeoch krank ist. Zu seinem jüngeren Bruder hat er keinen Kotakt mehr, da dieser Kenshin hasst.
+              Kenshin selbst leidet an Depressionen, einer Angststörung, ADHS und PTBS. Alle psychologischen Erkrankungen wurden ausgiebig 
+              recherchiert, um diese nicht fehlerhaft darzustellen. Durch die Website soll man in die Emotionen und das Leben von 
               Kenshin eintauchen und wird dabei passiv über die bekannten Daten von Hikikomori aufgeklärt. 
             </p>
           </div>

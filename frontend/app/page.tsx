@@ -10,7 +10,6 @@ export default function HomePage() {
       <MenuRight />
 
       <main className={styles.mainContent}>
-        {/* Container für das PFP und den Text-Overlay */}
         <div className={styles.heroContainer}>
           
           <div className={styles.imageWrapper}>
@@ -20,8 +19,6 @@ export default function HomePage() {
               className={styles.pfpImage}
             />
           </div>
-
-          {/* Info Text Bereich */}
           <div className={styles.heroText}>
             <h1 className={styles.designHeader}>Designerin</h1>
             <h1 className={styles.normalHeader}>+</h1>

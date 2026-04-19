@@ -25,8 +25,8 @@ export default function ProjectDetailPage() {
         <p className={styles.titleQuote}>
           Das Hangman-Spiel sollte als eine Express/Typescript Anwendung umgesetzt werden. 
           Die HTML-Seiten sollten statisch ausgeliefert werden und die Kommunikation mit dem Backend sollte über
-          REST-Schnittstellen erfolgen. Das zweiwöchige Projekt sollte in Einzelarbeit durchgeführt werden und 
-          knüpfte an ein vorheriges Projekt des Kurses an, in welchen man bereits die grundlagen von Express erlernt hatte.
+          REST-Schnittstellen erfolgen. Das zweiwöchige Projekt wurde in Einzelarbeit durchgeführt und 
+          knüpfte an ein vorheriges Projekt des Kurses an, in welchen man bereits die Grundlagen von Express erlernt hatte.
         </p>
 
         {/* Discover Section */}
@@ -38,7 +38,7 @@ export default function ProjectDetailPage() {
             className={styles.fullWidthImage}
           />
           <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
-            Zu Beginn wurde der Kommunikationsfluss der Website definiert. Dafür wurden zunächst alle benötigten Seiten identifiziert 
+            Zu Beginn wurde der Kommunikationsfluss der Website definiert. Dafür wurden zunächst alle benötigten Seiten identifiziert,  
             sowie die erforderlichen Schnittstellen und Funktionen für die Umsetzung festgelegt. Das UI-Design wurde anschließend 
             in Figma konzipiert und diente während der Entwicklung als visuelle Orientierung, wodurch der Implementierungsprozess 
             effizienter gestaltet werden konnte. Abschließend wurde entschieden, wie die eingegebenen Wörter strukturiert gespeichert 

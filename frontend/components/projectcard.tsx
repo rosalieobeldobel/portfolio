@@ -10,7 +10,6 @@ type ProjectCardProps = {
 export default function ProjectCard({ title, imageUrl }: ProjectCardProps) {
   return (
     <div className={styles.projectCard}>
-      {/* Lowercase title für die URL ist meistens sauberer, z.B. /moia statt /MOIA */}
       <Link href={`/${title}`}>
         <div className={styles.projectCardImageContainer}>
           <img 

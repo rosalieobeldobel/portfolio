@@ -1,5 +1,5 @@
 // Author: Rosalie Obeldobel
-import SkillItem from "@/components/skillItem"; // Achte auf Kleinschreibung, falls deine Datei so heißt
+import SkillItem from "@/components/skillItem"; 
 import styles from '@/app/page.module.css';
 
 export default function SkillsSectionDesign() {

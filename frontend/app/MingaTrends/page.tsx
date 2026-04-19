@@ -81,10 +81,10 @@ export default function ProjectDetailPage() {
           </div>
   
           <p className={styles.titleQuote}>
-              Im Rahmen des Projektes sollte man sich einen von den vorgegebenen Services aussuchen, ein wirklich existierendes Problem recherchieren und 
-              für dieses eine realistische und umsetzbare Lösung finden. Die Gruppenmitglieder Pia Röttcher und Rosalie Obeldobel wählten folgendes Thema: Es fehlt 
-              ein bezahlbares und verlässliches Liefer- und Logistikkonzept für kleine und mittelständische Betriebe in der Innenstadt im Einklang mit der 
-              Vision einer autofreien Innenstadt.
+              Im Rahmen des Projektes sollte man sich einen von den vorgegebenen Services aussuchen, ein wirklich existierendes Problem recherchieren 
+              und für dieses eine realistische und umsetzbare Lösung finden. Die Gruppenmitglieder Pia Röttcher und Rosalie Obeldobel wählten folgendes 
+              Thema: Es fehlt ein bezahlbares und verlässliches Liefer- und Logistikkonzept für kleine und mittelständische Betriebe in der Innenstadt 
+              im Einklang mit der sVision einer autofreien Innenstadt.
           </p>
 
           {/* Research */}
@@ -110,7 +110,7 @@ export default function ProjectDetailPage() {
             </div>
             <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
                 Alle in der Recherche gewonnen Informationen werden in der Synthese ausgiebig analysiert. Das Ziel ist es alle herrschenden Probleme und 
-                negativen Erlebnisse herauskristallisieren. Die Informationen wurden in verschiedene Kategorien eingeteilt, welche dann übersichtlich als eine 
+                negativen Erlebnisse herauszukristallisieren. Die Informationen wurden in verschiedene Kategorien eingeteilt, welche dann übersichtlich als eine 
                 User Journey dargestellt werden konnten. Die existierenden Probleme konnten auf diese Art und Weise auf einen Blick erkannt werden.
             </p>
           </section>
@@ -122,7 +122,7 @@ export default function ProjectDetailPage() {
               <ImageSlider images={ideationImages} />
             </div>
             <p className={styles.mediumText} style={{ textAlign: "center", marginTop: "0px" }}>
-                Für die in der vorherigen Phase entdeckten Probleme wurden nun mit Hilfe verschiedener Methoden Ideen für Lösung für diese Probleme gesammelt. 
+                Für die in der vorherigen Phase entdeckten Probleme wurden nun mit Hilfe verschiedener Methoden Ideen für mögliche Lösungen für diese Probleme gesammelt. 
                 Alle Ideen wurden anhand Umsetzbarkeit skaliert. Die Idee, die das schwerwiegendste Problem am Besten lösen würde und die höchste Umsetzbarkeit 
                 hatte wurde ausgewählt. Die Entscheidung viel demnach auf eine App-Anwendung, welche über Trends beim Einkaufen in der Innenstadt aufklären sollte. 
                 Auf diese Art und Weise sollten die Betriebe effizienter Lieferungen planen können. Die App würde Betriebe über die Nachfrage und die Kund:innen 
@@ -140,7 +140,7 @@ export default function ProjectDetailPage() {
                 In diesem letzten Schritt sollte nur beispielhaft ein Figma-Prototyp der App-Anwendung erstellt werden, da die Gewichtung des Projektes auf 
                 den vorherigen Phasen lag. Die wenigen Frames zeigen den ungefähren Aufbau der App und welche Inhalte diese zeigen würde. Bei dem Design orientierte
                 man sich an Social-Media-Plattformen. Eine große Menge an Informationen sollte möglichst übersichtlich und einfach dargestellt werden. Gleichzeitig 
-                soll das Design eine digitale lokale Zeitung widerspiegeln und ein heimisch Gefühl bei den Nutzer:innen auslösen.
+                soll das Design eine digitale lokale Zeitung widerspiegeln und ein heimisches Gefühl bei den Nutzer:innen auslösen.
             </p>
           </section>
         </main>
